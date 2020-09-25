@@ -1,0 +1,125 @@
+url: 'https://mysite.com/'
+
+# Enable CloudCannon UI
+cloudcannon:
+  data: true
+
+# Sass partials directory
+sass:
+  sass_dir: _sass
+
+# Global permalinks
+permalink: /:categories/:year/:title
+
+# Collections configurations
+collections:
+  my_collection:
+    output: true
+    permalink: /:collection/:name
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "/posts" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: blog
+      title:
+      subtitle:
+      author:
+      description: SEO content. Limit to 160 characters.
+      preview_image:
+      preview_image_alt_text:
+      categories: []
+      tags: []
+      keywords: []
+      sections:
+  -
+    scope:
+      path: "/drafts" # an empty string here means all files in the project
+      type: "drafts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: blog
+      title:
+      subtitle:
+      author:
+      description: SEO content. Limit to 160 characters.
+      preview_image:
+      preview_image_alt_text:
+      categories: []
+      tags: []
+      keywords: []
+      sections:
+
+# Sections (Page blocks)
+sections: []
+_array_structures:
+  sections:
+    - label: Two Image Grid
+      description: A responsive 2-column, 2-row grid with images and paragraphs
+      icon: ballot
+      value:
+        _id: 2_image_grid
+        row_1_content:
+        box_1_image:
+        box_1_image_alt_text:
+        row_2_content:
+        box_2_image:
+        box_2_image_alt_text:
+    - label: Three Image Gallery
+      description: A responsive 3-image gallery with large and small images
+      icon: collections
+      value:
+        _id: 3_image_gallery
+        gallery_large_image:
+        gallery_large_image_alt_text:
+        gallery_box_1_image:
+        gallery_box_1_image_alt_text:
+        gallery_box_2_image:
+        gallery_box_2_image_alt_text:
+
+# Plugins installed
+plugins:
+  - jekyll-sitemap
+  - jekyll-responsive-image
+  - jekyll-archives
+  - jekyll-webp
+
+# Configuration of the jekyll-responsive-image plugin
+responsive_image:
+  template: _includes/templates/image-tag-lazy.html
+  sizes:
+    - width: 360
+    - width: 480
+    - width: 600
+    - width: 800
+    - width: 1400
+  base_path: assets/images
+  output_path_format: assets/images/srcset/%{width}/%{basename}
+
+# Configuration of the jekyll-archives plugin
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive
+    tag: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tags/:name/'
+    category: '/categories/:name/'
+
+# Configuration for the WebP Generator Plugin
+webp:
+  enabled: true
+  quality: 75
+  img_dir: ["/assets/images/"]
+  nested: true
+
+# Configuration of the compress_html layout
+compress_html:
+  comments: all # Removes all comments; remove this line to enable comments in production site

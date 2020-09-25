@@ -1,0 +1,47 @@
+<section id="gallery">
+  <div class="padding-lg">
+    <div class="center">
+      <h2> Responsive Gallery </h2>
+      <a href="#" class="button">Click to change view</a>
+    </div>
+    <div class="padding-gallery bg-accent">
+      <div class="grid-noGutter-spaceAround-equalHeight">
+        <div class="col-6_sm-12-middle">
+          <div class="img-full gallery-main">
+
+            {% assign path = include.section.gallery_large_image %}
+            {% assign alt = include.section.gallery_large_image_alt_text %}
+            {% include image-lazy.html %}
+            <!-- <div class="caption-gallery">
+              <p>{{ alt }}</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-6_sm-12">
+          <div class="grid-noGutter-spaceAround-equalHeight">
+            <div class="col-12-middle">
+              <div class="img-full gallery-md-top">
+
+                {% assign path = include.section.gallery_box_1_image %}
+                {% assign alt = include.section.gallery_box_1_image_alt_text %}
+                {% include image-lazy.html %}
+                <!-- <div class="caption-gallery">
+                  <p>{{ alt }}</p>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-12-middle">
+              <div class="img-full gallery-md-bottom">
+
+                {% assign path = include.section.gallery_box_2_image %}
+                {% assign alt = include.section.gallery_box_2_image_alt_text %}
+                {% include image-lazy.html %}
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

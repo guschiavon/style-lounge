@@ -1,0 +1,12 @@
+{
+  "gus": {
+    "author_name": "Gus Schiavon",
+    "avatar_image": "/assets/images/bigfoot-avatar.png",
+    "twitter_handle": "@gus.schiavon_"
+  },
+  "bigfoot": {
+    "author_name": "Sasquatch",
+    "avatar_image": "/assets/images/bigfoot-avatar.png",
+    "twitter_handle": "@thenotorioussasquatch"
+  }
+}

@@ -1,0 +1,58 @@
+---
+layout: default
+title: Jekyll Bigfoot
+preview_image: assets/images/placeholder-007.jpg
+main_image: assets/images/placeholder-003.jpg
+main_image_alt_text: Some alt text here
+highlight_image: assets/images/placeholder-0012.jpg
+highlight_image_alt_text: Some alt text
+sections:
+  - _id: 2_image_grid
+    row_1_content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    box_1_image: assets/images/placeholder-0010.jpg
+    box_1_image_alt_text: Some alt here
+    row_2_content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    box_2_image: assets/images/placeholder-002.jpg
+    box_2_image_alt_text: Some alt here
+  - _id: 3_image_gallery
+    gallery_large_image: assets/images/placeholder-0013.jpg
+    gallery_large_image_alt_text: Some alt text
+    gallery_box_1_image: assets/images/placeholder-007.jpg
+    gallery_box_1_image_alt_text: Some alt text
+    gallery_box_2_image: assets/images/placeholder-009.jpg
+    gallery_box_2_image_alt_text: Some alt text
+---
+<main class="padding-lg center">
+  <div class="padding-sm">
+    <div class="avatar">
+      <div class="responsive-img-container">
+        {% responsive_image path: bigfoot.png alt: Bigfoot %}
+      </div>
+    </div>
+    <h3>{{page.title}}</h3>
+    <h1>
+      A Sassy Boilerplate for Jekyll sites
+    </h1>
+    <h2>
+      Optimized for <a href="https://cloudcannon.com">CloudCannon CMS</a>
+    </h2>
+  </div>
+  <div class="flex-center padding-md bg-shade">
+    <p class="editable">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <div class="padding-md bg-accent">
+    <div class="img-full">
+      {% assign path = page.main_image %}
+      {% assign alt = page.main_image_alt_text %}
+      {% include image.html path = page.main_image alt = page.main_image_alt_text %}
+      <div class="caption-lower">
+        <p>{{ alt }}</p>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Start of feature -->
+{% include blocks/highlight-boxes.html %}
+<!-- End of feature -->

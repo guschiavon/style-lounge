@@ -1,0 +1,53 @@
+<section class="padding-lg center">
+  <h2 class="editable"> Section heading </h2>
+  <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  <div class="grid-noGutter-spaceAround padding-md">
+
+    <div class="col-4_sm-12">
+      <div class="padding-sm">
+        <div class="highlight-container">
+          {% assign path = page.highlight_image %}
+          {% assign alt = page.highlight_image_alt_text %}
+          {% include image.html path = page.highlight_image alt = page.highlight_image_alt_text %}
+          <div class="highlight-overlay flex-center">
+            <div class="highlight-inner">
+              <h3> Joe </h3>
+              <p> Co-founder
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-4_sm-12">
+      <div class="padding-sm">
+        <div class="highlight-container">
+          {% assign path = page.highlight_image %}
+          {% assign alt = page.highlight_image_alt_text %}
+          {% include image.html path = page.highlight_image alt = page.highlight_image_alt_text %}
+          <div class="highlight-overlay flex-center">
+            <div class="highlight-inner">
+              <h3> Joe </h3>
+              <p> Co-founder
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-4_sm-12">
+      <div class="padding-sm">
+        <div class="highlight-container">
+          {% assign path = page.highlight_image %}
+          {% assign alt = page.highlight_image_alt_text %}
+          {% include image.html path = page.highlight_image alt = page.highlight_image_alt_text %}
+          <div class="highlight-overlay flex-center">
+            <div class="highlight-inner">
+              <h3> Joe </h3>
+              <p> Co-founder
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

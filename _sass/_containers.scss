@@ -1,0 +1,87 @@
+
+// Image containers
+
+.responsive-img-container {
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+}
+
+.img-xs,
+.img-sm,
+.img-md,
+.img-lg,
+.img-xl,
+.img-full,
+.gallery-md,
+.gallery-main {
+  height    : inherit;
+  margin    : auto;
+  overflow  : hidden;
+  position  : relative;
+  &:hover {
+    .caption-lower,
+    .caption-right,
+    .caption-left,
+    .caption-gallery {
+      opacity : 1;
+    }
+  }
+}
+
+.img-xs {
+  width : 180px;
+}
+
+.img-sm {
+  width : 360px;
+}
+
+.img-md {
+  width : 480px;
+}
+
+.img-lg {
+  width : 600px;
+}
+
+.img-xl {
+  width : 800px;
+}
+
+.img-full {
+  width : 100%;
+}
+
+.caption-lower {
+  @include          caption-defaults;
+  @include          flex-center;
+  left            : 0;
+  width           : 100%;
+  padding-top     : 2rem;
+  padding-bottom  : 2rem;
+}
+
+.caption-right {
+  @include          caption-defaults;
+  @include          flex-center;
+  right           : 0;
+  width           : 50%;
+  height          : 100%;
+}
+
+.caption-left {
+  @include          caption-defaults;
+  @include          flex-center;
+  left            : 0;
+  width           : 50%;
+  height          : 100%;
+}
+
+.caption-gallery {
+  @include          caption-defaults;
+  @include          flex-center;
+  left            : 0;
+  width           : 100%;
+  height          : 100%;
+}

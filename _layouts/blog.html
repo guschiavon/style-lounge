@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<main>
+<section class="padding-md">
+  <div class="grid-noGutter">
+    <div class="col-12-middle center">
+      <h1>
+        {{page.title}}
+      </h1>
+      <h2>
+        {{page.subtitle}}
+      </h2>
+      {% for tag in page.tags %}
+      <a href="/archive/tags/{{tag | slugify }}">
+        {{tag}}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+</main>
+<section class="padding-lg">
+  {{content}}
+</section>

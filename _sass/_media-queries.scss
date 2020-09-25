@@ -1,0 +1,36 @@
+@media (max-width: 48rem) {
+  .gallery-main,
+  .gallery-md-top,
+  .gallery-md-bottom {
+    padding: 0;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .mobile-nav {
+    display: inline-block;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .nav-bar {
+    padding   : 0.5% 2%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1320px) {
+  .large-image {
+    width: 100%;
+
+  }
+  .quote-box {
+    width: 80%;
+    right: 0;
+    left: 0;
+    top: 25%;
+    margin: auto;
+  }
+  .quote-name {
+    transform: none;
+  }
+}

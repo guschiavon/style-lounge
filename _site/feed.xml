@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="http://localhost:4000feed.xml" rel="self" type="application/rss+xml" />
+    <title>Jekyll Bigfoot</title>
+    <description>A loaded Jekyll boilerplate optimized for CloudCannon CMS</description>
+    <link>http://localhost:4000</link>
+    
+      
+        <item>
+          <title>My third post</title>
+          <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <![CDATA[<img align="left" hspace="5" src="http://localhost:4000/assets/images/placeholder-001.jpg"/>]]>
+          </description>
+          <pubDate>Sun, 01 Mar 2020 00:00:00 +0800</pubDate>
+          <link>http://localhost:4000/webdev/2020/my-third-post</link>
+          <guid isPermaLink="true">http://localhost:4000/webdev/2020/my-third-post</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>My second post</title>
+          <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <![CDATA[<img align="left" hspace="5" src="http://localhost:4000/assets/images/placeholder-003.jpg"/>]]>
+          </description>
+          <pubDate>Sat, 01 Feb 2020 00:00:00 +0800</pubDate>
+          <link>http://localhost:4000/design/2020/my-second-post</link>
+          <guid isPermaLink="true">http://localhost:4000/design/2020/my-second-post</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>My first post</title>
+          <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <![CDATA[<img align="left" hspace="5" src="http://localhost:4000/assets/images/placeholder-001.jpg"/>]]>
+          </description>
+          <pubDate>Wed, 01 Jan 2020 00:00:00 +0800</pubDate>
+          <link>http://localhost:4000/webdev/2020/my-first-post</link>
+          <guid isPermaLink="true">http://localhost:4000/webdev/2020/my-first-post</guid>
+        </item>
+      
+    
+  </channel>
+</rss>
