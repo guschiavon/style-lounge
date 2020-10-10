@@ -1,0 +1,29 @@
+.header-banner {
+  height    : 800px;
+  width     : 100vw;
+  position  : relative;
+  .responsive-img {
+    object-fit      : cover;
+    object-position : center;
+    height          : 100%;
+    width           : 100%;
+  }
+  .header-content {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    height    : inherit;
+    width     : 50%;
+    display   : flex;
+    flex-direction  : column;
+    justify-content : center;
+    padding-left    : 8%;
+  }
+  .banner-heading {
+    // position: absolute;
+    // left: 10%;
+    // top: 50%;
+    font-size: 6rem;
+  }
+  
+}

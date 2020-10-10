@@ -1,0 +1,10 @@
+{% for section in page.sections %}
+  {% case section._id %}
+    {% when '2-image-grid' %}
+      {% include blocks/2-image-grid.html section=section %}
+    {% when '3_image_gallery' %}
+      {% include blocks/3-image-gallery.html section=section %}
+    {% when 'highlight-boxes'%}  
+      {% include blocks/highlight-boxes.html %}
+  {% endcase %}
+{% endfor %}
