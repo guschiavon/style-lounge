@@ -1,4 +1,4 @@
-url: 'https://mysite.com/'
+url: 'https://thestylelounge.com'
 
 # Enable CloudCannon UI
 cloudcannon:
@@ -57,33 +57,45 @@ sections: []
 _array_structures:
   sections:
     - label: Two Image Grid
-      description: A responsive 2-column, 2-row grid with images and paragraphs
-      icon: ballot
+      description: A responsive 2-column grid with image, heading and paragraph
+      icon: grid_on
       value:
-        _id: 2_image_grid
-        row_1_content:
-        box_1_image:
-        box_1_image_alt_text:
-        row_2_content:
-        box_2_image:
-        box_2_image_alt_text:
+        _id: 2-image-grid
+        rows:
+          - heading:
+            content:
+            image:
+            caption:
+            alt_text:
     - label: Three Image Gallery
       description: A responsive 3-image gallery with large and small images
-      icon: collections
+      icon: view_carousel
       value:
-        _id: 3_image_gallery
+        _id: 3-image-gallery
         gallery_large_image:
         gallery_large_image_alt_text:
         gallery_box_1_image:
         gallery_box_1_image_alt_text:
         gallery_box_2_image:
         gallery_box_2_image_alt_text:
+    - label: Highlight Boxes 1
+      description: Highlight boxes with hover-over effect
+      icon: view_column
+      value:
+        _id: highlight-boxes
+        background_class:
+        highlights:
+          - heading:
+            text:
+            highlight_image:
+            highlight_image_alt_text:
+            url:     
 
 # Plugins installed
 plugins:
   - jekyll-sitemap
   - jekyll-responsive-image
-  - jekyll-archives
+  # - jekyll-archives
   - jekyll-webp
 
 # Configuration of the jekyll-responsive-image plugin
@@ -99,19 +111,19 @@ responsive_image:
   output_path_format: assets/images/srcset/%{width}/%{basename}
 
 # Configuration of the jekyll-archives plugin
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive
-    tag: archive
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tags/:name/'
-    category: '/categories/:name/'
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive
+#     tag: archive
+#   permalinks:
+#     year: '/:year/'
+#     month: '/:year/:month/'
+#     day: '/:year/:month/:day/'
+#     tag: '/tags/:name/'
+#     category: '/categories/:name/'
 
 # Configuration for the WebP Generator Plugin
 webp:

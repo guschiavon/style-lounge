@@ -1,22 +1,37 @@
 
 // Buttons
 
-.button {
-  padding        : 1rem 2rem;
-  display        : inline-block;
-  margin         : 2rem 0;
-  border         : 1px solid;
-  text-transform : uppercase;
-  font-family    : $heading-font-family;
-  letter-spacing : 2px;
+
+.btn-outline {
+  @include button-standard;
+  color          : $accent-color;
+  border-color   : $accent-color;
+  @include transition;
+  &:hover {
+    color             : $light-color;
+    background-color  : $accent-shade;
+    border-color      : $accent-shade;
+    @include transition;
+  }
 }
 
-.bg-primary .button {
-  color        : $secondary-shade;
-  border-color : $secondary-shade;
+.btn-solid {
+  @include button-standard;
+  color           : $light-color;
+  background-color: $accent-shade;
+  border-color    : $accent-shade;
+  @include transition;
+  &:hover {
+    background-color  : $accent-color;
+    border-color      : $accent-color;
+    @include transition;
+  }
 }
 
-.bg-secondary .button {
-  color        : $primary-shade;
-  border-color : $primary-shade;
+.desktop-nav {
+  .btn-outline {
+    padding: 0.4rem 1rem;
+    margin: 0;
+  }
 }
+

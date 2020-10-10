@@ -28,22 +28,22 @@
 // Backgrounds
 
 .bg-primary {
-  color            : $primary-color;
-  background-color : $primary-shade;
+  color            : $light-color;
+  background-color : $dark-color;
 }
 
 .bg-secondary {
-  color            : $secondary-shade;
-  background-color : $secondary-color;
+  color            : $accent-shade;
+  background-color : $light-color;
 }
 
 .bg-shade {
-  color            : $primary-shade;
-  background-color : $secondary-shade;
+  color            : $dark-color;
+  background-color : $accent-shade;
 }
 
 .bg-accent {
-  color            : $primary-color;
+  color            : $light-color;
   background-color : $accent-color;
 }
 

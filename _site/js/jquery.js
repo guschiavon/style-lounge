@@ -1,6 +1,5 @@
 
 $(document).ready(function(){
- console.log('jQuery loaded')
 
   $('.burger').click(function(){
     $(this).toggleClass('open');
@@ -15,6 +14,20 @@ $(document).ready(function(){
 
     $('.burger').toggleClass('open');
 
-  });
+  });  
 
+  // let textHeight = $('.text-container').height();
+  // let imageHeight = $('.img-container').height();
+  
+  // const adjustHeight = function(text, image) {
+  //   $('.row').each(function() {
+  //     if (text > image) {
+  //       imageHeight = $('.img-container').height(textHeight);
+  //       console.log('adjusted')
+  //     } 
+  //   });
+  // }
+  
+  // adjustHeight(textHeight, imageHeight)
 });
+

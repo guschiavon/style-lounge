@@ -1,16 +1,20 @@
 <div class="nav-bar">
   <div id="desktop-nav" class="desktop-nav">
     <div class="grid-noGutter-spaceBetween">
-      <div class="col-4-middle">
+      <div class="col-2-middle">
         <a href="/" class="nav-logo">
           <img src="{{site.data.settings.basics.site_logo_image}}" alt="{{site.data.settings.basics.site_title}}">
         </a>
       </div>
-      <nav class="col-8-middle right">
-        <a href="{{site.data.settings.navigation.menu_1_url}}" class="editable"> About </a>
-        <a href="{{site.data.settings.navigation.menu_2_url}}" class="editable"> Portfolio </a>
-        <a href="{{site.data.settings.navigation.menu_3_url}}" class="editable"> Blog </a>
-        <a href="{{site.data.settings.navigation.menu_4_url}}" class="editable"> Contact </a>
+      <nav class="col-10-middle right">
+        {% for menu in site.data.settings.navigation %}
+          <a href="{{menu.url}}" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a>
+        {% endfor %}
+        <span class="menu-social">
+          <a href="{{site.data.settings.social.facebook_url}}">{% include social-icons.html icon='Facebook' %}</a>
+          <a href="{{site.data.settings.social.instagram_url}}">{% include social-icons.html icon='Instagram' %}</a>
+        </span>
+        
       </nav>
     </div>
   </div>
@@ -26,10 +30,10 @@
     <div id="mobile-menu" class="mobile-menu hide">
       <nav class="mobile-links">
         <ul>
-          <li><a href="{{site.data.settings.navigation.menu_1_url}}" class="editable"> About </a></li>
-          <li><a href="{{site.data.settings.navigation.menu_2_url}}" class="editable"> Portfolio </a></li>
-          <li><a href="{{site.data.settings.navigation.menu_3_url}}" class="editable"> Blog </a></li>
-          <li><a href="{{site.data.settings.navigation.menu_4_url}}" class="editable"> Contact </a></li>
+          {% for menu in site.data.settings.navigation %}
+          <li><a href="{{menu.url}}" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a></li>
+          {% endfor %}
+          
         </ul>
       </nav>
       <div class="menu-social">

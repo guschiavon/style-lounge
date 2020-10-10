@@ -1,46 +1,27 @@
 <section id="2-image-grid">
-  <div class="grid-noGutter-equalHeight">
-    <div class="col-6_sm-12-middle bg-shade">
-      <div class="padding-md flex-center">
+  {% for row in section.rows %}
+  <div class="grid-noGutter-equalHeight{% cycle '','-reverse' %} row">
+    <div class="col-6_sm-12-middle text-container">
+      <div class="padding-md flex-left bg-primary">
+        {% unless row.heading == nil %}
+        <h2>
+          {{row.heading}}
+        </h2>
+        {% endunless %}
         <p>
-          {{include.section.row_1_content}}
+          {{row.content}}
         </p>
       </div>
     </div>
-    <div class="col-6_sm-12-middle bg-secondary">
-      <div class="padding-md">
-        <div class="img-full">
-
-          {% assign path = include.section.box_1_image %}
-          {% assign alt = include.section.box_1_image_alt_text %}
+    <div class="col-6_sm-12-middle img-container">
+      <div class="bg-accent">
+        <div class="">
+          {% assign path = row.image %}
+          {% assign alt = row.alt_text %}
           {% include image-lazy.html %}
-          <div class="caption-lower">
-            <p>{{ alt }}</p>
-          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="grid-reverse-noGutter-equalHeight">
-    <div class="col-6_sm-12-middle bg-shade">
-      <div class="padding-md flex-center">
-        <p>
-          {{include.section.row_2_content}}
-        </p>
-      </div>
-    </div>
-    <div class="col-6_sm-12-middle bg-secondary">
-      <div class="padding-md">
-        <div class="img-full">
-
-          {% assign path = include.section.box_2_image %}
-          {% assign alt = include.section.box_2_image_alt_text %}
-          {% include image-lazy.html %}
-          <div class="caption-gallery">
-            <p>{{ alt }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% endfor %}
 </section>

@@ -1,9 +1,9 @@
 # Basic settings
 basics:
-  site_title: Jekyll Bigfoot
-  description: A loaded Jekyll boilerplate optimized for CloudCannon CMS
-  site_base_url: 'https://mysite.com'
-  site_logo_image: '/bigfoot.png'
+  site_title: The Style Lounge
+  description: Hair salon and beauty treatments in Lichfield
+  site_base_url: 'https://thestylelounge.com'
+  site_logo_image: 'assets/images/the-style-lounge-logo.png'
   site_thumb_image: 'assets/images/placeholder-001.jpg'
   contact_email: 'example@me.com'
   phone_number: "+555 555 5555"
@@ -11,7 +11,7 @@ basics:
 social:
   facebook_url: 'https://facebook.com'
   instagram_url: 'https://instagram.com'
-  instagram_handle: '@yourhandle'
+  instagram_handle: '@thestyleloungelichfield'
   twitter_url: 'https://twitter.com'
   twitter_handle: '@yourhandle'
   youtube_url: 'https://youtube.com'
@@ -20,12 +20,22 @@ social:
   snapchat_url: 'https://snapchat.com'
   stackoverflow_url: 'https://stackoverflow.com'
 navigation:
-  menu_1_url: /about
-  menu_2_url: /portfolio
-  menu_3_url: /blog
-  menu_4_url: /contact
-  menu_5_url:
-  menu_6_url:
+  - name: 'Treatments'
+    url: '/treatments'
+    button: false
+  - name: 'Our Team'
+    url: '/#team'
+    button: false
+  - name: 'Shop'
+    url: 'https://shop.thestylelounge.co.uk'
+    button: false
+  - name: 'Contact'
+    url: '/contact'
+    button: false
+  - name: 'Make Appointment'
+    url: '/appointment'
+    button: true
+  
 # Brand identity
 logos:
   navbar_logo_image: '/assets/logos/your-logo.png'
@@ -33,17 +43,17 @@ logos:
 
 # Global colors. Put HEX values between quotes otherwise it will act as a comment in YAML
 colors:
-  primary_color: "#222"
-  secondary_color: "#555"
-  primary_shade_color: "#363e36"
-  secondary_shade_color: "#565"
-  accent_color: "#999"
+  dark_color: "#231F20"
+  light_color: "#EAEAEA"
+  accent_color: "#AD974F"
+  accent_shade_color: "#8E793E"
 
 # Typography (can be customized to accomodate more styles like standard font sizes and line height)
 fonts:
-  fonts_code_block:  '<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nunito&display=swap" rel="stylesheet">' # Place between single quotes
-  body_font_family: "'Nunito', sans-serif;"
-  design_font_family: "'Abril Fatface', cursive;"
+  fonts_code_block:  '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+' # Place between single quotes
+  body_font_family: "'Quicksand', sans-serif;"
+  design_font_family: "'Playfair Display', serif;"
 
 seo:
   fb_app_id: 123456789

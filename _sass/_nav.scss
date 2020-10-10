@@ -7,6 +7,7 @@
   left      : 0;
   z-index   : 1000;
   padding   : 0.5rem 2rem;
+  background-color: $dark-color;
 }
 
 // Desktop Navigation Styles
@@ -15,14 +16,32 @@
   height: auto
 }
 
+.desktop-nav {
+  padding: 0 4rem;
+  .menu-social a {
+    display   : inline-block;
+    padding   : 0.5rem;
+    margin    : 0.5rem auto;
+    svg {
+      width   : 20px;
+      fill    : white
+    }
+  }
+}
+
 nav a {
   font-size      : 1rem;
   font-family    : $body-font-family;
   text-transform : uppercase;
   padding        : 0.25rem;
-  margin-right   : 1rem;
+  margin-right   : 2.5rem;
+  color          : $light-color;
   &:last-of-type {
     margin       : 0;
+  }
+  &:hover {
+    color: $accent-color;
+    text-decoration: underline;
   }
 }
 
@@ -111,11 +130,11 @@ nav a {
   width : 0%;
 }
 
-.open span {
-  -moz-box-shadow    : 0px 0px 8px 1px rgba(20, 20, 20,0.5);
-  -webkit-box-shadow : 0px 0px 8px 1px rgba(20, 20, 20,0.5);
-  box-shadow         : 0px 0px 8px 1px rgba(20, 20, 20,0.5);
-}
+// .open span {
+//   -moz-box-shadow    : 0px 0px 8px 1px rgba(20, 20, 20,0.5);
+//   -webkit-box-shadow : 0px 0px 8px 1px rgba(20, 20, 20,0.5);
+//   box-shadow         : 0px 0px 8px 1px rgba(20, 20, 20,0.5);
+// }
 
 .mobile-menu {
   z-index          : 999;
