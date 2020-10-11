@@ -56,7 +56,7 @@ p, a, ol, ul, li, span, label { font-family: "Quicksand", sans-serif; font-size:
 
 .responsive-img-container { width: 100%; height: 100%; overflow: hidden; }
 
-.img-xs, .img-sm, .img-md, .img-lg, .img-xl, .img-full, .gallery-md, .gallery-main { height: inherit; margin: auto; overflow: hidden; position: relative; }
+.img-xs, .img-sm, .img-md, .img-lg, .img-xl, .img-full, .gallery-md, .gallery-main { height: inherit; margin: auto; position: relative; }
 
 .img-xs:hover .caption-lower, .img-xs:hover .caption-right, .img-xs:hover .caption-left, .img-xs:hover .caption-gallery, .img-sm:hover .caption-lower, .img-sm:hover .caption-right, .img-sm:hover .caption-left, .img-sm:hover .caption-gallery, .img-md:hover .caption-lower, .img-md:hover .caption-right, .img-md:hover .caption-left, .img-md:hover .caption-gallery, .img-lg:hover .caption-lower, .img-lg:hover .caption-right, .img-lg:hover .caption-left, .img-lg:hover .caption-gallery, .img-xl:hover .caption-lower, .img-xl:hover .caption-right, .img-xl:hover .caption-left, .img-xl:hover .caption-gallery, .img-full:hover .caption-lower, .img-full:hover .caption-right, .img-full:hover .caption-left, .img-full:hover .caption-gallery, .gallery-md:hover .caption-lower, .gallery-md:hover .caption-right, .gallery-md:hover .caption-left, .gallery-md:hover .caption-gallery, .gallery-main:hover .caption-lower, .gallery-main:hover .caption-right, .gallery-main:hover .caption-left, .gallery-main:hover .caption-gallery { opacity: 1; }
 
@@ -176,9 +176,11 @@ nav a:hover, nav span:hover { color: #AD974F; text-decoration: underline; }
 
 .img-container { height: 500px; }
 
-.bg-pattern { position: relative; }
+.column-section-1 .img-lg { height: 600px; }
 
-.bg-pattern:before { content: ""; position: absolute; top: 0; left: 0; height: 400px; width: 50%; display: block; background-image: radial-gradient(#AD974F 1px, transparent 0); background-size: 20px 20px; background-position: -9px -9px; z-index: 1000; }
+.column-section-1 .bg-pattern { position: relative; }
+
+.column-section-1 .bg-pattern:before { content: ""; position: absolute; top: 15%; right: -10%; height: 400px; width: 30%; display: block; background-image: radial-gradient(#AD974F 1px, #0000 0); background-size: 20px 20px; background-position: -9px -9px; z-index: 1; }
 
 @media (max-width: 48rem) { .gallery-main, .gallery-md-top, .gallery-md-bottom { padding: 0; } }
 
