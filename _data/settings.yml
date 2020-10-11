@@ -2,26 +2,26 @@
 basics:
   site_title: The Style Lounge
   description: Hair salon and beauty treatments in Lichfield
-  site_base_url: 'https://thestylelounge.com'
+  site_base_url: 'https://thestyleloungelichfield.com'
   site_logo_image: 'assets/images/the-style-lounge-logo.png'
   site_thumb_image: 'assets/images/placeholder-001.jpg'
-  contact_email: 'example@me.com'
+  contact_email: 'sales@thestyleloungelichfield.com'
   phone_number: "+555 555 5555"
-  address: 1 Main Street, Springfield 90009
+  address: '5-7 Greenhill, Lichfield'
 social:
   facebook_url: 'https://facebook.com'
   instagram_url: 'https://instagram.com'
   instagram_handle: '@thestyleloungelichfield'
-  twitter_url: 'https://twitter.com'
-  twitter_handle: '@yourhandle'
-  youtube_url: 'https://youtube.com'
-  github_url: 'https://github.com'
-  linkedin_url: 'https://linkedin.com'
-  snapchat_url: 'https://snapchat.com'
-  stackoverflow_url: 'https://stackoverflow.com'
+  # twitter_url: 'https://twitter.com'
+  # twitter_handle: '@yourhandle'
+  # youtube_url: 'https://youtube.com'
+  # github_url: 'https://github.com'
+  # linkedin_url: 'https://linkedin.com'
+  # snapchat_url: 'https://snapchat.com'
+  # stackoverflow_url: 'https://stackoverflow.com'
 navigation:
-  - name: 'Treatments'
-    url: '/treatments'
+  - name: 'services'
+    url: '/services'
     button: false
   - name: 'Our Team'
     url: '/#team'
@@ -50,10 +50,9 @@ colors:
 
 # Typography (can be customized to accomodate more styles like standard font sizes and line height)
 fonts:
-  fonts_code_block:  '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-' # Place between single quotes
+  fonts_code_block:  '<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">' # Place between single quotes
   body_font_family: "'Quicksand', sans-serif;"
-  design_font_family: "'Playfair Display', serif;"
+  design_font_family: "'Josefin Sans', sans-serif;"
 
 seo:
   fb_app_id: 123456789

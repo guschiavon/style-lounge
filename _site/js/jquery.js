@@ -16,18 +16,18 @@ $(document).ready(function(){
 
   });  
 
-  // let textHeight = $('.text-container').height();
-  // let imageHeight = $('.img-container').height();
+  let textHeight = $('.text-container').height();
+  let imageHeight = $('.img-container').height();
   
-  // const adjustHeight = function(text, image) {
-  //   $('.row').each(function() {
-  //     if (text > image) {
-  //       imageHeight = $('.img-container').height(textHeight);
-  //       console.log('adjusted')
-  //     } 
-  //   });
-  // }
+  const adjustHeight = function(text, image) {
+    $('.row').each(function() {
+      if (text > image) {
+        imageHeight = $('.img-container').height(textHeight);
+        console.log('adjusted')
+      } 
+    });
+  }
   
-  // adjustHeight(textHeight, imageHeight)
+  adjustHeight(textHeight, imageHeight)
 });
 
