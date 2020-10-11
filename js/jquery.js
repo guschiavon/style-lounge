@@ -16,6 +16,7 @@ $(document).ready(function(){
 
   });  
 
+// this block allows to use 'object-fit' with Gridlex 'equalHeight' class
   let textHeight = $('.text-container').height();
   let imageHeight = $('.img-container').height();
   
@@ -27,6 +28,7 @@ $(document).ready(function(){
       } 
     });
   }
+
   
   adjustHeight(textHeight, imageHeight)
 });

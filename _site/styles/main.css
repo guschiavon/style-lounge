@@ -176,6 +176,10 @@ nav a:hover, nav span:hover { color: #AD974F; text-decoration: underline; }
 
 .img-container { height: 500px; }
 
+.bg-pattern { position: relative; }
+
+.bg-pattern:before { content: ""; position: absolute; top: 0; left: 0; height: 400px; width: 50%; display: block; background-image: radial-gradient(#AD974F 1px, transparent 0); background-size: 20px 20px; background-position: -9px -9px; z-index: 1000; }
+
 @media (max-width: 48rem) { .gallery-main, .gallery-md-top, .gallery-md-bottom { padding: 0; } }
 
 @media (min-width: 300px) and (max-width: 600px) { .mobile-nav { display: inline-block; } .desktop-nav { display: none; } .nav-bar { padding: 0.5% 2%; } }
