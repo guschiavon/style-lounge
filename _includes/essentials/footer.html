@@ -1,1 +1,34 @@
 <!-- Add your footer code here -->
+<footer id="footer" class="footer padding-lg">
+  <div class="grid-noGutter-spaceAround">
+    <div class="col-4_sm-12-middle">
+      <img src="{{site.data.settings.basics.site_logo_image}}" alt="">
+      <p>{{site.data.settings.basics.address}}</p>
+      <p>{{site.data.settings.basics.phone_number}}</p>
+      <p>{{site.data.settings.basics.contact_email}}</p>
+      <a href="{{site.data.settings.social.facebook_url}}">{%include social-icons.html icon="Facebook" %}</a>
+      <a href="{{site.data.settings.social.instagram_url}}">{%include social-icons.html icon="Instagram" %}</a>
+    </div>
+    <div class="col-4_sm-12-middle">
+    <nav class="footer-nav">
+      <ul>
+        {% for menu in site.data.settings.navigation %}
+        <li>
+          <a href="{{menu.url}}">{{menu.name}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>  
+    </div>
+    <div class="col-4_sm-12-middle">
+      <h3>Opening Hours</h3>
+      <p>Monday: {{site.data.settings.opening_hours.monday}}</p>
+      <p>Tuesday: {{site.data.settings.opening_hours.tuesday}}</p>
+      <p>Wednesday: {{site.data.settings.opening_hours.wednesday}}</p>
+      <p>Thursday: {{site.data.settings.opening_hours.thursday}}</p>
+      <p>Friday: {{site.data.settings.opening_hours.friday}}</p>
+      <p>Saturday: {{site.data.settings.opening_hours.saturday}}</p>
+      <p>Sunday: {{site.data.settings.opening_hours.sunday}}</p>
+    </div>
+  </div>
+</footer>
