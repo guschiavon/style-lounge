@@ -2,7 +2,7 @@
   {% for row in section.rows %}
   <div class="grid-noGutter-equalHeight{% cycle '','-reverse' %} row">
     <div class="col-6_sm-12-middle text-container">
-      <div class="padding-md flex-left bg-primary">
+      <div class="padding-md flex-left {{row.background_class}}">
         {% unless row.heading == nil %}
         <h2>
           {{row.heading}}

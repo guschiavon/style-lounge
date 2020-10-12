@@ -67,6 +67,7 @@ _array_structures:
             image:
             caption:
             alt_text:
+            background_class:
     - label: 'Column Section #1'
       description: 2 column section with image, heading and paragraph
       icon: vertical_split
@@ -98,7 +99,16 @@ _array_structures:
             text:
             highlight_image:
             highlight_image_alt_text:
-            url:     
+            url:
+    - label: Team Overview
+      description: A section to present team members
+      icon: account_box
+      value:
+        _id: team
+        team_members:
+          - name:
+            bio:
+            avatar_image:
 
 # Plugins installed
 plugins:
