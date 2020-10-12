@@ -2,9 +2,11 @@
   {% case section._id %}
     {% when '2-image-grid' %}
       {% include blocks/2-image-grid.html section=section %}
-    {% when '3_image_gallery' %}
+    {% when '3-image-gallery' %}
       {% include blocks/3-image-gallery.html section=section %}
     {% when 'highlight-boxes'%}  
       {% include blocks/highlight-boxes.html %}
+    {% when 'column-section-1' %}  
+      {% include blocks/column-section-1.html %}
   {% endcase %}
 {% endfor %}

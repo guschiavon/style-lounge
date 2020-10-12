@@ -67,6 +67,15 @@ _array_structures:
             image:
             caption:
             alt_text:
+    - label: 'Column Section #1'
+      description: 2 column section with image, heading and paragraph
+      icon: vertical_split
+      value:
+        _id: column-section-1
+        image:
+        image_alt_text:
+        # heading:
+        # content_markdown:     
     - label: Three Image Gallery
       description: A responsive 3-image gallery with large and small images
       icon: view_carousel

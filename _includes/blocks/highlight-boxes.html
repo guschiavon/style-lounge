@@ -1,7 +1,12 @@
-<section id="highlight-boxes" class="padding-lg center {{section.background_class}}">
-  <h2 class="editable">Section heading</h2>
-  <p class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <div class="grid-noGutter-spaceAround padding-md">
+<hr class="sm-divider">
+<section id="highlight-boxes" class="highlight-boxes padding-lg center {{section.background_class}}">
+  <h2 class="editable">
+    Section heading
+  </h2>
+  <p class="editable">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <div class="grid-noGutter-spaceAround padding-md bg-pattern">
     {% for highlight in section.highlights %}
     <div class="col-4_sm-12">
       <a href="{{highlight.url}}">
@@ -10,11 +15,13 @@
             {% assign path = highlight.highlight_image %}
             {% assign alt = highlight.highlight_image_alt_text %}
             {% include image.html path = highlight.highlight_image alt = image.highlight_image_alt_text %}
-            <div class="highlight-overlay flex-center">
-              <div class="highlight-inner">
-                <h3>{{highlight.heading}}</h3>
-                <p>{{highlight.text}}</p>
-              </div>
+            <!-- <div class="highlight-overlay flex-center">
+            </div> -->
+            <div class="highlight-inner">
+              <h3>
+                {{highlight.heading}}
+              </h3>
+              
             </div>
           </div>
         </div>
@@ -22,4 +29,5 @@
     </div>  
     {% endfor %}    
   </div>
+  <a href="" class="btn-outline">All services</a>
 </section>
