@@ -107,6 +107,7 @@ _array_structures:
         _id: team
         team_members:
           - name:
+            role:
             bio:
             avatar_image:
 

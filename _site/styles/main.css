@@ -36,7 +36,7 @@ h1, h2, h3 { font-family: "Josefin Sans", sans-serif; margin-bottom: 2rem; }
 
 h1 { font-size: 4rem; text-transform: uppercase; }
 
-h2 { font-size: 3.5rem; }
+h2 { font-weight: 200; font-size: 3.5rem; }
 
 h3 { font-size: 2rem; }
 
@@ -106,11 +106,11 @@ p, a, ol, ul, li, span, label { font-family: "Quicksand", sans-serif; font-size:
 
 .desktop-nav .nav-title { font-family: "Josefin Sans", sans-serif; text-transform: uppercase; font-weight: 300; font-size: 1.2rem; color: #EAEAEA; margin: auto; }
 
-nav a, nav span { font-size: 1rem; font-family: "Quicksand", sans-serif; text-transform: uppercase; padding: 0.25rem; margin-right: 2.5rem; color: #EAEAEA; }
+nav a, nav span { font-size: 1rem; font-family: "Quicksand", sans-serif; letter-spacing: 2px; text-transform: uppercase; padding: 0.25rem; margin-right: 2.5rem; color: #EAEAEA; -webkit-transition: 0.3s ease all; -o-transition: 0.3s ease all; -moz-transition: 0.3s ease all; transition: 0.3s ease all; }
 
 nav a:last-of-type, nav span:last-of-type { margin: 0; }
 
-nav a:hover, nav span:hover { color: #AD974F; text-decoration: underline; }
+nav a:hover, nav span:hover { color: #AD974F; -webkit-transition: 0.3s ease all; -o-transition: 0.3s ease all; -moz-transition: 0.3s ease all; transition: 0.3s ease all; }
 
 .mobile-nav { width: 100%; display: none; }
 
@@ -201,6 +201,16 @@ nav a:hover, nav span:hover { color: #AD974F; text-decoration: underline; }
 .column-section-1 .bg-pattern { position: relative; }
 
 .column-section-1 .bg-pattern:before { content: ""; position: absolute; top: 15%; right: -10%; height: 400px; width: 30%; display: block; background-image: radial-gradient(#AD974F 1px, #0000 0); background-size: 20px 20px; background-position: -9px -9px; z-index: 1; }
+
+.team-name { font-family: "Josefin Sans", sans-serif; font-size: 1.5rem; font-weight: 200; text-transform: uppercase; color: #AD974F; margin-top: 1rem; margin-bottom: unset; }
+
+.team-bio { font-size: 0.9rem; }
+
+.team-role { font-weight: 600; font-size: 0.9rem; color: #74676a; margin-bottom: 1rem; }
+
+.team .bg-pattern { position: relative; }
+
+.team .bg-pattern::before { content: ''; position: absolute; top: -10%; left: 50%; transform: translateX(-50%); width: 350px; height: 100px; background-image: radial-gradient(#AD974F 1px, #0000 0); background-size: 20px 20px; z-index: -1; }
 
 @media (max-width: 48rem) { .gallery-main, .gallery-md-top, .gallery-md-bottom { padding: 0; } }
 

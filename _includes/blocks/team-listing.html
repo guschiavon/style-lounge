@@ -1,17 +1,17 @@
 <section id="team-listing" class="team padding-lg">
   <div class="grid-noGutter-spaceAround">
-    <div class="col-6_sm-12-middle flex-center">
+    <div class="col-6_sm-12-middle flex-center bg-pattern">
       <h2 class="editable">
         Professional Stylists
       </h2>
-      <p class="editable">
+      <p class="editable center padding-lg">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis ipsam nobis reprehenderit asperiores molestiae maxime blanditiis hic ipsum? Quo, alias! Incidunt necessitatibus numquam earum non vel eligendi excepturi voluptatibus sapiente.
       </p>
-      <a href="" class="btn-outline">
+      <a href="/our-team" class="btn-outline">
         Meet the team
       </a>
     </div>
-    <div class="col-6_sm-12-middle grid-noGutter">
+    <div class="col-6_sm-12-middle grid-noGutter-equalHeight-spaceAround">
       {% for member in section.team_members %}
       <div class="col-4_md-6_sm-12">
         <div class="team-card padding-md">
@@ -21,6 +21,9 @@
           <h3 class="team-name">
             {{member.name}}
           </h3>
+          <p class="team-role">
+            {{member.role}}
+          </p>
           <p class="team-bio">
             {{member.bio}}
           </p>

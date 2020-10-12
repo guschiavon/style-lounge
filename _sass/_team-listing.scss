@@ -1,0 +1,36 @@
+.team-name {
+  font-family     : $heading-font-family;
+  font-size       : 1.5rem;
+  font-weight     : 200;
+  text-transform  : uppercase;
+  color           : $accent-color;
+  margin-top      : 1rem;
+  margin-bottom   : unset;
+}
+.team-bio {
+  font-size       : 0.9rem;
+}
+.team-role {
+  font-weight     : 600;
+  font-size       : 0.9rem;
+  color           : lighten($dark-color, 30);
+  margin-bottom   : 1rem;
+}
+
+.team {
+  .bg-pattern {
+    position: relative;
+    &::before {
+      content   : '';
+      position  : absolute;
+      top       : -10%;
+      left      : 50%;
+      transform : translateX(-50%);
+      width     : 350px;
+      height    : 100px;
+      background-image  : radial-gradient(#AD974F 1px, #0000 0);
+      background-size   : 20px 20px;
+      z-index   : -1;
+    }
+  }
+}
