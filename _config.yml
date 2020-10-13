@@ -67,9 +67,8 @@ _array_structures:
         label: Two Image Grid
         rows:
           - heading:
-            content:
+            content_text:
             image:
-            caption:
             alt_text:
             background_class:
     - label: 'Column Section #1'
@@ -78,10 +77,9 @@ _array_structures:
       value:
         _id: column-section-1
         label: 'Column Section #1'
+        background_class:
         image:
-        image_alt_text:
-        # heading:
-        # content_markdown:     
+        alt_text:   
     - label: Three Image Gallery
       description: A responsive 3-image gallery with large and small images
       icon: view_carousel
@@ -113,10 +111,12 @@ _array_structures:
       value:
         _id: team
         label: Team Overview
+        background_class:
+        button_url:
         team_members:
           - name:
             role:
-            bio:
+            bio_text:
             avatar_image:
 
 # Plugins installed
@@ -164,3 +164,16 @@ webp:
 # Configuration of the compress_html layout
 compress_html:
   comments: all # Removes all comments; remove this line to enable comments in production site
+
+# Background classes for the sections
+background_classes:
+  - bg-primary
+  - bg-secondary
+  - bg-accent
+  - bg-reset
+
+_comments:
+  background_class: Choose from the pre-determined background classes for the section.
+  description: Optimize this content for SEO. Provide valuable information about the page in less than 160 characters.
+  preview_image: Preview image for social sharing. If left blank, it will use the image defined in the 'Settings' file under the 'Basics' menu.
+  header_image: Image for the page's header banner

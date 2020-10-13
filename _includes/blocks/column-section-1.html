@@ -1,9 +1,9 @@
-<div id="column-section-1" class="column-section-1 padding-md bg-primary">
+<div id="column-section-1" class="column-section-1 padding-md {{section.background_class}}">
   <div class="grid-noGutter-spaceAround">
     <div class="col-6_sm-12-middle">
       <div class="img-lg bg-pattern">
         {% assign path = section.image %}
-        {% assign alt = section.image_alt_text %}
+        {% assign alt = section.alt_text %}
         {% include image-lazy.html %}
       </div>
     </div>
