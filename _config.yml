@@ -61,6 +61,7 @@ _array_structures:
       icon: grid_on
       value:
         _id: 2-image-grid
+        label: Two Image Grid
         rows:
           - heading:
             content:
@@ -73,6 +74,7 @@ _array_structures:
       icon: vertical_split
       value:
         _id: column-section-1
+        label: 'Column Section #1'
         image:
         image_alt_text:
         # heading:
@@ -82,6 +84,7 @@ _array_structures:
       icon: view_carousel
       value:
         _id: 3-image-gallery
+        label: Three Image Gallery
         gallery_large_image:
         gallery_large_image_alt_text:
         gallery_box_1_image:
@@ -93,6 +96,7 @@ _array_structures:
       icon: view_column
       value:
         _id: highlight-boxes
+        label: Highlight Boxes 1
         background_class:
         highlights:
           - heading:
@@ -105,6 +109,7 @@ _array_structures:
       icon: account_box
       value:
         _id: team
+        label: Team Overview
         team_members:
           - name:
             role:
