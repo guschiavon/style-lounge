@@ -16,7 +16,7 @@ permalink: /:path
 
 # Collections configurations
 collections:
-  pages:
+  my_collection:
     output: true
     permalink: /:title
 
