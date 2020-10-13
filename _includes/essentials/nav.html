@@ -5,9 +5,9 @@
         <a href="/" class="nav-logo">
           <img src="{{site.data.settings.basics.site_logo_image}}" alt="{{site.data.settings.basics.site_title}}" />
         </a>
-        <span class="nav-title">
+        <a href="/" class="nav-title">
           The Style Lounge
-        </span>
+        </a> 
       </div>
       <nav class="col-10-middle right">
         {% for menu in site.data.settings.navigation %}
@@ -17,7 +17,6 @@
           <a href="{{site.data.settings.social.facebook_url}}">{% include social-icons.html icon='Facebook' %}</a>
           <a href="{{site.data.settings.social.instagram_url}}">{% include social-icons.html icon='Instagram' %}</a>
         </span>
-        
       </nav>
     </div>
   </div>

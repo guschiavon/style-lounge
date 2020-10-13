@@ -1,18 +1,27 @@
 <!-- Create your above-the-fold here -->
 <header>
   {% include essentials/nav.html %}
-<div class="header-banner">
-  <img src="/assets/hair-salon-lichfield-the-style-lounge-6-bw.jpg" class="responsive-img" alt="" />
-  <div class="header-content flex-center">
-    <h2 class="banner-heading">
-      The Style Lounge
-    </h2>
-    <h3 class="editable">
- 	Lichfield
- </h3>
-    <!-- <span>
-      <a href="book" class="btn-solid">Make appointment</a>
-    </span> -->
+  <div class="header-banner">
+    <img src="{{page.main_image}}" class="responsive-img" alt="{{page.main_image_alt_text}}" />
+    {% if page._home %}
+    <div class="header-content flex-center">
+      <h2 class="banner-heading">
+        The Style Lounge
+      </h2>
+      <h3 class="editable">
+        Lichfield
+      </h3>
+      <!-- <span>
+        <a href="book" class="btn-solid">Make appointment</a>
+      </span> -->
+    </div>
+    {% endif %}
+    
+    <div class="page-title-container bg-accent" id="page-title">
+      <h3 class="center">
+        {{page.title}}
+      </h3>
+    </div>
   </div>
-</div>
+
 </header>

@@ -33,7 +33,7 @@ navigation:
     url: '/services'
     button: false
   - name: 'Our Team'
-    url: '/#team'
+    url: '/team'
     button: false
   - name: 'Shop'
     url: 'https://shop.thestylelounge.co.uk'

@@ -12,13 +12,13 @@ sass:
 uploads_dir: /assets/images
 
 # Global permalinks
-permalink: /:categories/:year/:title
+permalink: /:path
 
 # Collections configurations
 collections:
-  my_collection:
+  pages:
     output: true
-    permalink: /:collection/:name
+    permalink: /:title
 
 # Defaults
 defaults:
