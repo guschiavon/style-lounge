@@ -16,12 +16,13 @@
       </span> -->
     </div>
     {% endif %}
-    
+    {% unless page._home %}
     <div class="page-title-container bg-accent" id="page-title">
       <h3 class="center">
         {{page.title}}
       </h3>
     </div>
+    {% endunless %}
   </div>
 
 </header>

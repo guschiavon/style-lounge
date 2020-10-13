@@ -118,6 +118,29 @@ _array_structures:
             role:
             bio_text:
             avatar_image:
+    - label: Professionals
+      description: A section featuring the professionals and their services
+      icon: people
+      value:
+        _id: professionals
+        label: Professionals
+        background_class:
+        professionals:
+          - name:
+            bio_text_html:
+            profile_image:
+    - label: Services
+      description: A section featuring the services offered and possibility to book
+      icon: library_books
+      value:
+        _id: professionals
+        label: Professionals
+        background_class:
+        services:
+          - name:
+            description_text_html:
+            feature_image:
+            alt_text:
 
 # Plugins installed
 plugins:

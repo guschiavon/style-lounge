@@ -49,3 +49,35 @@
   }
   
 }
+@mixin box-offset {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page-title-container {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  bottom: -5%;
+  @include box-offset;
+  z-index: 1;
+  h3 {
+    position: relative;
+    margin-bottom: unset;
+    padding: 1.5rem 2rem;
+    font-weight: 200;
+    z-index: 1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    @include box-offset;
+    height: 105px;
+    width: 150%;
+    display: block;
+    background-image: radial-gradient($accent-color 1px, #0000 0);
+    background-size: 20px 20px;
+    background-position: -9px -9px;
+    z-index: 0;
+  }
+}
