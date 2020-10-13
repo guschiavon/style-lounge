@@ -11,7 +11,7 @@
       </div>
       <nav class="col-10-middle right">
         {% for menu in site.data.settings.navigation %}
-          <a href="/appointment" class="editable {% if menu.button %}btn-outline{% endif %}">Make Appointment</a>
+          <a href="{{menu.url}}" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a>
         {% endfor %}
         <span class="menu-social">
           <a href="{{site.data.settings.social.facebook_url}}">{% include social-icons.html icon='Facebook' %}</a>

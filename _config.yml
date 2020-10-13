@@ -1,4 +1,4 @@
-url: 'https://thestylelounge.com'
+url: 'https://thestyleloungelichfield.com'
 
 # Enable CloudCannon UI
 cloudcannon:
@@ -7,6 +7,9 @@ cloudcannon:
 # Sass partials directory
 sass:
   sass_dir: _sass
+  style: compressed
+
+uploads_dir: /assets/images
 
 # Global permalinks
 permalink: /:categories/:year/:title
@@ -156,6 +159,7 @@ webp:
   quality: 75
   img_dir: ["/assets/images/"]
   nested: true
+  regenerate: false
 
 # Configuration of the compress_html layout
 compress_html:
