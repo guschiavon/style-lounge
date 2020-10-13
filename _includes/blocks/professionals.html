@@ -1,7 +1,7 @@
 <section id="item-cards" class="item-cards padding-lg {{section.background_class}}">
   <div class="grid-noGutter-spaceAround">
     {% for professional in section.professionals %}
-    <div class="col-5_sm-12 item-card">
+    <div class="col-5_md-12 item-card">
       <div class="item-img">
         {% assign path = professional.profile_image | replace: "/assets", "assets" %}
         {% assign alt = professional.name %}

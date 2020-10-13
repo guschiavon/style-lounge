@@ -33,7 +33,7 @@
       <nav class="mobile-links">
         <ul>
           {% for menu in site.data.settings.navigation %}
-          <li><a href="/appointment" class="editable {% if menu.button %}btn-outline{% endif %}">Make Appointment</a></li>
+          <li><a href="{{menu.url}}" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a></li>
           {% endfor %}
           
         </ul>

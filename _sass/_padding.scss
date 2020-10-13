@@ -1,10 +1,40 @@
 
 // Paddings
 
+$lg-value: 8%;
+$md-value: 5%;
+$sm-value: 2%;
 
+.padding-x-lg {
+  padding-left: $lg-value;
+  padding-right: $lg-value;
+}
+
+.padding-y-lg {
+  padding-top: $lg-value;
+  padding-bottom: $lg-value;
+}
+.padding-x-md {
+  padding-left: $md-value;
+  padding-right: $md-value;
+}
+
+.padding-y-md {
+  padding-top: $md-value;
+  padding-bottom: $md-value;
+}
+.padding-x-sm {
+  padding-left: $sm-value;
+  padding-right: $sm-value;
+}
+
+.padding-y-sm {
+  padding-top: $sm-value;
+  padding-bottom: $sm-value;
+}
 
 .padding-lg {
-  padding : 8%;
+  padding : $lg-value;
 }
 
 .padding-md {
