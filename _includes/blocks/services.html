@@ -3,7 +3,10 @@
     {% for service in section.services %}
     <div class="col-5_sm-12 item-card">
       <div class="item-img">
-        <img src="{{service.feature_image}}" alt="{{service.alt_text}}">
+        {% assign path = service.feature_image | replace: "/assets", "assets" %}
+        {% assign alt = service.name %}
+        {% include image-lazy.html %}
+        <!-- <img src="{{service.feature_image}}" alt="{{service.alt_text}}"> -->
       </div>
       <div class="item-content">
         <div class="item-heading">

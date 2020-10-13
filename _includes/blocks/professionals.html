@@ -3,7 +3,10 @@
     {% for professional in section.professionals %}
     <div class="col-5_sm-12 item-card">
       <div class="item-img">
-        <img src="{{professional.profile_image}}" alt="">
+        {% assign path = professional.profile_image | replace: "/assets", "assets" %}
+        {% assign alt = professional.name %}
+        {% include image-lazy.html %}
+        <!-- <img src="{{professional.profile_image}}" alt=""> -->
       </div>
       <div class="item-content">
         <div class="item-heading">
