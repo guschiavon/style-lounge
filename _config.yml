@@ -15,10 +15,10 @@ uploads_dir: /assets/images
 permalink: /:path
 
 # Collections configurations
-collections:
-  my_collection:
-    output: true
-    permalink: /:title
+# collections:
+#   my_collection:
+#     output: true
+#     permalink: /:title
 
 # Defaults
 defaults:
