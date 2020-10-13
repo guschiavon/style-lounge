@@ -130,7 +130,7 @@ _array_structures:
             bio_text_html:
             profile_image:
     - label: Services
-      description: A section featuring the services offered and possibility to book
+      description: A section featuring the services offered and CTA buttons
       icon: library_books
       value:
         _id: professionals
@@ -141,6 +141,15 @@ _array_structures:
             description_text_html:
             feature_image:
             alt_text:
+    - label: 'Call-to-Action #1'
+      description: A call-to-action section with background image
+      icon: card_membership
+      value:
+        _id: cta-1
+        label: 'Call-to-Action #1'
+        background_image:
+        button_url:
+
 
 # Plugins installed
 plugins:
