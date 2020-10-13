@@ -15,10 +15,10 @@ uploads_dir: /assets/images
 permalink: /:path
 
 # Collections configurations
-collections:
-  my_collection:
-    output: true
-    permalink: /:title
+# collections:
+#   my_collection:
+#     output: true
+#     permalink: /:title
 
 # Defaults
 defaults:
@@ -92,16 +92,15 @@ _array_structures:
         gallery_box_1_image_alt_text:
         gallery_box_2_image:
         gallery_box_2_image_alt_text:
-    - label: Highlight Boxes 1
+    - label: Highlight Boxes
       description: Highlight boxes with hover-over effect
       icon: view_column
       value:
         _id: highlight-boxes
-        label: Highlight Boxes 1
+        label: Highlight Boxes
         background_class:
         highlights:
           - heading:
-            text:
             highlight_image:
             highlight_image_alt_text:
             url:
