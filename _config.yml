@@ -145,10 +145,21 @@ _array_structures:
       icon: card_membership
       value:
         _id: cta-1
-        label: 'Call-to-Action #1'
+        label: Call-to-Action
         background_image:
         button_url:
-
+    - label: Ads Slider
+      description: A simple slider allowing for multiple promo banners. Update the content via Elfsight.
+      icon: calendar_view
+      value:
+        label: Ads Slider
+        background_class:      
+    - label: Reviews Slider
+      description: A simple slider featuring Facebook Reviews. Automatically updated.
+      icon: grade
+      value:
+        label: Reviews Slider
+        background_class:      
 
 # Plugins installed
 plugins:
