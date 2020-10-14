@@ -24,8 +24,6 @@ h3 {
   font-weight   : 300;
 }
 
-
-
 p,
 a,
 ol,
@@ -56,4 +54,11 @@ textarea {
 #cookiescript_injected span {
     font-size: 0.9rem;
     text-transform: unset;
+}
+
+.privacy {
+  p,
+  li {
+    margin-bottom: 1rem;
+  }
 }
