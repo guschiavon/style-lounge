@@ -247,7 +247,13 @@ sizes:
   - Large  
 
 _comments:
-  background_class: Choose from the pre-determined background classes for the section.
-  description: Optimize this content for SEO. Provide valuable information about the page in less than 160 characters.
-  preview_image: Preview image for social sharing. If left blank, it will use the image defined in the 'Settings' file under the 'Basics' menu.
+  background_class: Choose from the pre-determined background classes for the section. Defaults to site's body background color
+  description: Optimize this content for SEO. Provide valuable information about the page in less than 160 characters
+  preview_image: Preview image for social sharing. If left blank, it will use the image defined in the 'Settings' file under the 'Basics' menu
   header_image: Image for the page's header banner
+  main_image: Image for the page's header banner
+  alt_text: Important for SEO; put a description of the image with keywords
+  main_image_alt_text: Important for SEO; put a description of the image with keywords
+  image_alt_text: Important for SEO; put a description of the image with keywords
+  highlight_image_alt_text: Important for SEO; put a description of the image with keywords
+  button_url: The destination path for the button click action

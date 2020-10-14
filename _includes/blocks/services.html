@@ -4,7 +4,7 @@
     <div class="col-5_md-12 item-card">
       <div class="item-img">
         {% assign path = service.feature_image | replace: "/assets", "assets" %}
-        {% assign alt = service.name %}
+        {% assign alt = service.alt_text %}
         {% include image-lazy.html %}
         <!-- <img src="{{service.feature_image}}" alt="{{service.alt_text}}"> -->
       </div>
