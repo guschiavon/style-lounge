@@ -173,6 +173,11 @@ _array_structures:
         background_class:
         action_code_block:
         method: post
+    - label: Horizontal Divider
+      description: A horizontal line to divide sections
+      icon: maximize
+      value:
+        size:
 
 # Plugins installed
 plugins:
@@ -230,6 +235,11 @@ background_classes:
 methods:
   - get
   - post
+
+sizes:
+  - Small
+  - Medium
+  - Large  
 
 _comments:
   background_class: Choose from the pre-determined background classes for the section.

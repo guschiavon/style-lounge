@@ -22,5 +22,7 @@
       {% include blocks/services.html %}
     {% when 'contact-form' %}
       {% include blocks/contact-form.html %}
+    {% when 'dividers' %}
+      {% include blocks/dividers.html size=section.size %}
   {% endcase %}
 {% endfor %}
