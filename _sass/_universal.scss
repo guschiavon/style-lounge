@@ -58,7 +58,16 @@ textarea {
 
 .privacy {
   p,
-  li {
+  ol,
+  ul {
     margin-bottom: 1rem;
+  }
+  ol,
+  ul {
+    list-style-position: inside;
+  }
+  a {
+    color: $accent-color;
+    text-decoration: underline;
   }
 }
