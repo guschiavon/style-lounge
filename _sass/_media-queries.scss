@@ -37,6 +37,15 @@
     height: 70px;
     top: 10%;
   }
+  .ads-slider {
+    .bg-pattern {
+      &::before {
+        height: 100px;
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
 }
 
 @media (min-width: 300px) and (max-width: 800px) {
