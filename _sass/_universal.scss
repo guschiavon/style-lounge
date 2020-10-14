@@ -21,7 +21,9 @@ h2 {
 
 h3 {
   font-size     : 2rem;
+  font-weight   : 300;
 }
+
 
 
 p,
@@ -29,6 +31,7 @@ a,
 ol,
 ul,
 li,
+address,
 span,
 label,
 input,
@@ -38,6 +41,7 @@ textarea
   font-size      : 1.2rem;
   line-height    : 1.5;
   font-weight    : 300;
+  text-transform : unset;
 }
 
 input,
@@ -46,4 +50,10 @@ textarea {
   width: 100%;
   padding: 0.5rem 1rem;
   margin: 0.5rem auto;
+}
+
+// overrides the Cookiescript styles
+#cookiescript_injected span {
+    font-size: 0.9rem;
+    text-transform: unset;
 }

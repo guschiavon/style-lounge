@@ -24,7 +24,11 @@
     margin    : 0.5rem auto;
     svg {
       width   : 20px;
-      fill    : white
+      fill    : white;
+      &:hover {
+        fill: $accent-color;
+        @include transition;
+      }
     }
   }
   .flex-center {
