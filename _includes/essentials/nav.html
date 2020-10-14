@@ -12,7 +12,7 @@
       </div>
       <nav class="col-8_md-9-middle flex-center right">
         {% for menu in site.data.settings.navigation %}
-          <a href="{{menu.url}}" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a>
+          <a href="/appointment" class="editable {% if menu.button %}btn-outline{% endif %}">Make Appointment</a>
         {% endfor %}
         <span class="menu-social">
           <a href="{{site.data.settings.social.facebook_url}}">{% include social-icons.html icon='Facebook' %}</a>
@@ -35,7 +35,7 @@
       <nav class="mobile-links">
         <ul>
           {% for menu in site.data.settings.navigation %}
-          <li><a href="{{menu.url}}" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a></li>
+          <li><a href="/appointment" class="editable {% if menu.button %}btn-outline{% endif %}">Make Appointment</a></li>
           {% endfor %}          
         </ul>
       </nav>
