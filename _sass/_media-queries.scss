@@ -19,12 +19,14 @@
 }
 
 @media (min-width: 300px) and (max-width: 800px) {
+  .header-banner {
+    height: 500px;
+  }
   .highlight-container {
-    width: 300px;
-    height: 300px;
+    width: 100%;
   } 
   .column-section-1 .img-lg {
-    width: 300px;
+    width: 90%;
     height: 300px;
   }
   .header-banner {
@@ -60,14 +62,12 @@
 
 
 @media (min-width: 576px) and (max-width: 1620px) {
-  .highlight-container {
-    width: 300px;
-    height: 300px;
-  }
+  .highlight-container,
   .column-section-1 .img-lg {
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    // height: 300px;
   }
+   
   .highlight-inner h3 {
     font-size: 1.3rem;
   }
