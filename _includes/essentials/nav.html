@@ -1,15 +1,16 @@
 <div class="nav-bar">
   <div id="desktop-nav" class="desktop-nav">
     <div class="grid-noGutter-spaceBetween">
-      <div class="col-2-middle flex-center">
+      <div class="col-4_md-3-middle flex-center">
         <a href="/" class="nav-logo">
           <img src="{{site.data.settings.basics.site_logo_image}}" alt="{{site.data.settings.basics.site_title}}" />
+          <!-- <span class="nav-title">The Style Lounge</span> -->
         </a>
         <a href="/" class="nav-title">
           The Style Lounge
         </a> 
       </div>
-      <nav class="col-10-middle right">
+      <nav class="col-8_md-9-middle flex-center right">
         {% for menu in site.data.settings.navigation %}
           <a href="{{menu.url}}" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a>
         {% endfor %}
@@ -21,6 +22,7 @@
     </div>
   </div>
   <div id="mobile-nav" class="mobile-nav">
+    <a href="/" class="nav-title">The Style Lounge</a>
     <div class="burger-container">
       <div class="burger">
         <span></span>
@@ -34,8 +36,7 @@
         <ul>
           {% for menu in site.data.settings.navigation %}
           <li><a href="{{menu.url}}" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a></li>
-          {% endfor %}
-          
+          {% endfor %}          
         </ul>
       </nav>
       <div class="menu-social">

@@ -36,7 +36,8 @@
     font-weight: 300;
     font-size: 1.2rem;
     color: $light-color;
-    margin: auto;
+    // margin: auto;
+    margin-left: 1rem;
   }
 }
 
@@ -64,6 +65,9 @@ nav span {
 .mobile-nav {
   width    : 100%;
   display  : none;
+  .nav-title {
+    text-transform: uppercase;
+  }
 }
 
 .burger-container {
@@ -76,7 +80,7 @@ nav span {
 .burger {
   @include            transition;
   position          : absolute;
-  top               : 0.8rem;
+  top               : -23px;
   right             : 0;
   width             : 50px;
   height            : 45px;
