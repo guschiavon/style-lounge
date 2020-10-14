@@ -80,8 +80,13 @@ _array_structures:
         _id: column-section-1
         label: 'Column Section #1'
         background_class:
+        heading:
+        content_html:
         image:
-        alt_text:   
+        alt_text:
+        add_button: false
+        button_text:
+        button_url:
     - label: Three Image Gallery
       description: A responsive 3-image gallery with large and small images
       icon: view_carousel

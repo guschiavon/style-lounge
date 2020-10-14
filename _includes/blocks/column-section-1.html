@@ -9,12 +9,15 @@
     </div>
     <div class="col-6_sm-12-middle">
       <div class="padding-md">
-        <h2 class="editable">
-          More than just hairstyling
+        <h2>
+          {{section.heading}}
         </h2>
-        <p class="editable">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vero placeat hic esse, ipsam unde voluptates mollitia amet. Maxime expedita est consequuntur aliquam incidunt sequi iure ad quibusdam officia voluptatum exercitationem quisquam harum, quod sapiente sit facilis maiores ullam libero!
+        <p>
+          {{section.content_html}}
         </p>
+        {% if section.add_button %}
+        <a href="{{section.button_url}}" class="btn-outline">{{section.button_text}}</a>
+        {% endif %}
       </div>
     </div>
   </div>
