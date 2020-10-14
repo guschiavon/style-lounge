@@ -19,6 +19,12 @@
 }
 
 @media (min-width: 300px) and (max-width: 800px) {
+  .mobile-hide {
+    display: none;
+  }
+  .mobile-center {
+    text-align: center;
+  }
   .header-banner {
     height: 500px;
   }
