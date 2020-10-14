@@ -9,8 +9,11 @@
         </h2>
         {% endunless %}
         <p>
-          {{row.content_text}}
+          {{row.content_text_html}}
         </p>
+        {% if row.add_button %}
+        <a href="{{row.button_url}}" class="btn-outline">{{row.button_text}}</a>
+        {% endif %}
       </div>
     </div>
     <div class="col-6_sm-12-middle img-container">

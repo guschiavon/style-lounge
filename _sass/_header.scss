@@ -34,9 +34,9 @@
     // padding-left    : 8%;
     // padding-right   : 8%;
     h3 {
-      z-index     : 1000;
       font-size   : 3rem;
       font-weight : 200;
+      z-index     : 100;
     }
     
   }
@@ -45,7 +45,7 @@
     letter-spacing  : 10px;
     text-transform  : uppercase;
     font-weight     : 300;
-    z-index         : 1000;
+    z-index         : 100;
   }
   
 }

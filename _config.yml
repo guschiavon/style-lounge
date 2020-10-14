@@ -66,11 +66,13 @@ _array_structures:
         _id: 2-image-grid
         label: Two Image Grid
         rows:
-          - heading:
+          - background_class:
+            heading:
             content_text:
             image:
             alt_text:
-            background_class:
+            add_button:
+            button_text:
     - label: 'Column Section #1'
       description: 2 column section with image, heading and paragraph
       icon: vertical_split
@@ -152,14 +154,25 @@ _array_structures:
       description: A simple slider allowing for multiple promo banners. Update the content via Elfsight.
       icon: calendar_view
       value:
+        _id: ads-slider
         label: Ads Slider
         background_class:      
-    - label: Reviews Slider
+    - label: Testimonials Slider
       description: A simple slider featuring Facebook Reviews. Automatically updated.
       icon: grade
       value:
-        label: Reviews Slider
-        background_class:      
+        _id: testimonial-slider
+        label: Testimonials Slider
+        background_class:
+    - label: Contact from
+      description: A simple contact form for client submissions
+      icon: horizontal_split
+      value:
+        _id: contact-form
+        label: Contact Form
+        background_class:
+        action_code_block:
+        method: post
 
 # Plugins installed
 plugins:
@@ -213,6 +226,10 @@ background_classes:
   - bg-secondary
   - bg-accent
   - bg-reset
+
+methods:
+  - get
+  - post
 
 _comments:
   background_class: Choose from the pre-determined background classes for the section.
