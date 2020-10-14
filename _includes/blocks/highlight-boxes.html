@@ -5,9 +5,9 @@
   <p class="editable">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   </p>
-  <div class="grid-noGutter-spaceAround padding-x-md padding-y-sm bg-pattern">
+  <div class="grid-noGutter-spaceAround padding-y-sm bg-pattern">
     {% for highlight in section.highlights %}
-    <div class="col-4_sm-12">
+    <div class="col-4_md-6_sm-12">
       <a href="{{highlight.url}}">
         <div class="padding-sm">
           <div class="highlight-container">
@@ -24,6 +24,6 @@
       </a>
     </div>  
     {% endfor %}    
-    <a href="/services" class="btn-outline editable">All services</a>
   </div>
+  <a href="/services" class="btn-outline editable">All services</a>
 </section>
