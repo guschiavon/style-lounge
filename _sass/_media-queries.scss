@@ -14,7 +14,28 @@
     display: none;
   }
   .nav-bar {
-    padding   : 1.5% 2%;
+    padding   : 3% 2%;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .page-title-container {
+    h3 {
+    padding: 1rem;
+    }
+    &::before {
+      height: 55px;
+    }
+  }
+  .item-cards .item-img {
+    height: 300px;
+  }
+  .padding-lg {
+    padding-top: 15%;
+  }
+  .team .bg-pattern::before {
+    height: 70px;
+    top: 10%;
   }
 }
 

@@ -18,8 +18,8 @@ opening_hours:
   sunday: closed
 
 social:
-  facebook_url: 'https://facebook.com'
-  instagram_url: 'https://instagram.com'
+  facebook_url: 'https://facebook.com/thestyleloungelichfield'
+  instagram_url: 'https://instagram.com/thestyleloungelichfield'
   instagram_handle: '@thestyleloungelichfield'
   # twitter_url: 'https://twitter.com'
   # twitter_handle: '@yourhandle'
@@ -36,7 +36,7 @@ navigation:
     url: '/team'
     button: false
   - name: 'Shop'
-    url: 'https://shop.thestylelounge.co.uk'
+    url: 'https://shop.thestyleloungelichfield.com'
     button: false
   - name: 'Contact'
     url: '/contact'
@@ -74,4 +74,3 @@ configuration:
   google_analytics_code_block:
   form_submission_handler_code_block:
   flexbox_framework_code_block: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">'
-  fontawesome_code_block:

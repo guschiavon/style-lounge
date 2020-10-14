@@ -7,7 +7,7 @@
   </p>
   <div class="grid-noGutter-spaceAround padding-y-sm bg-pattern">
     {% for highlight in section.highlights %}
-    <div class="col-4_md-6_sm-12">
+    <div class="col-4_md-6_sm-12" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
       <a href="{{highlight.url}}">
         <div class="padding-sm">
           <div class="highlight-container">
@@ -25,5 +25,5 @@
     </div>  
     {% endfor %}    
   </div>
-  <a href="/services" class="btn-outline editable">All services</a>
+  <a href="/services" class="btn-outline editable" >All services</a>
 </section>

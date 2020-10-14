@@ -1,7 +1,7 @@
 <section id="item-cards" class="item-cards padding-y-md padding-x-lg {{section.background_class}}">
   <div class="grid-noGutter-spaceAround">
     {% for service in section.services %}
-    <div class="col-5_md-12 item-card">
+    <div class="col-5_md-12 item-card" data-aos="zoom-in">
       <div class="item-img">
         {% assign path = service.feature_image | replace: "/assets", "assets" %}
         {% assign alt = service.alt_text %}

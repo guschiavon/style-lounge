@@ -182,7 +182,16 @@ _array_structures:
       description: A horizontal line to divide sections
       icon: maximize
       value:
+        _id: dividers
+        label: Dividers
         size:
+    - label: Instagram Feed
+      description: A section with the Instagram Feed
+      icon: image
+      value:
+        _id: instagram-feed
+        label: Instagram Feed
+        background_class:
 
 # Plugins installed
 plugins:

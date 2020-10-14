@@ -35,3 +35,10 @@
   background-position: center;
   background-size: cover;
 }
+
+.eapps-instagram-feed a {
+    text-decoration: none !important;
+    color: $light-color !important;
+    font-family: $heading-font-family !important;
+    font-size: 2rem !important;
+}
