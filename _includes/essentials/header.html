@@ -2,7 +2,18 @@
 <header>
   {% include essentials/nav.html %}
   <div class="header-banner">
-    <img src="{{page.main_image}}" class="responsive-img" alt="{{page.main_image_alt_text}}" />
+    {% if page.main_image %}
+      {% assign path = page.main_image | replace: "/assets", "assets" %}
+      {% assign alt = page.main_image_alt_text %}
+
+      {% responsive_image_block %}
+        path: {{ path }}
+        alt: {{ alt }}
+        {% if title %}
+        title: {{ title }}
+        {% endif %}
+      {% endresponsive_image_block %}
+    {% endif %}
     {% if page._home %}
     <div class="header-content flex-center">
       <h2 class="banner-heading" data-aos="zoom-in" data-aos-duration="1000">
