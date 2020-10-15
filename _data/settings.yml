@@ -42,7 +42,7 @@ navigation:
     url: '/contact'
     button: false
   - name: 'Make Appointment'
-    url: '/appointment'
+    url: 'https://www.premiersoftware.co.uk/Book-OnlineV2/?i=1390ac4e2ce6e6d2f47d573ab30aa42a'
     button: true
   
 # Brand identity
