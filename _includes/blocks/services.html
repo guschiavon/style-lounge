@@ -5,18 +5,18 @@
       <div class="item-img">
         <img src="{{service.feature_image | replace: "/assets/images", "/assets/images/srcset/600"}}" srcset="{{service.feature_image | replace: "/assets/images", "/assets/images/srcset/600" | replace: "jpg","webp"}}" alt="{{service.name}}" class="responsive-img lazyload">
       </div>
-      <div class="item-content">
+      <div class="item-content center">
         <div class="item-heading">
           <h3>
             {{service.name}}
           </h3>
         </div>
-        <div class="item-description center">
+        <div class="item-description">
           <p>
             {{service.description_text_html}}
           </p>
         </div>
-        <!-- <a href="" class="btn-outline"></a> -->
+        <a href="{{service.booking_url}}" class="btn-outline">{{service.button_text}}</a>
       </div>
     </div>
     {% endfor %}

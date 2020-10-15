@@ -2,15 +2,15 @@
   {% for row in section.rows %}
   <div class="grid-noGutter-equalHeight{% cycle '','-reverse' %} row">
     <div class="col-6_sm-12-middle text-container">
-      <div class="padding-lg flex-left {{row.background_class}}">
+      <div class="padding-lg flex-{% cycle "left", "right" %} {{row.background_class}}">
         {% unless row.heading == nil %}
         <h2>
           {{row.heading}}
         </h2>
         {% endunless %}
-        <p>
+        <p class="{% cycle "", "right" %}">
           {{row.content_text_html}}
-        </p>
+        </p >
         {% if row.add_button %}
         <a href="{{row.button_url}}" class="btn-outline">{{row.button_text}}</a>
         {% endif %}
