@@ -16,7 +16,7 @@
       <div class="col-4_md-6_sm-12">
         <div class="team-card padding-md">
           <div class="team-avatar">
-            <img src="{{member.avatar_image}}" alt="{{member.name}}" class="img-sm" />
+            <img src="{{member.avatar_image | replace: "/assets/images", "/assets/images/srcset/360"}}" srcset="{{member.avatar_image | replace: "/assets/images", "/assets/images/srcset/360" | replace: "jpg", "webp"}}" alt="{{member.name}}" class="img-sm" />
           </div>
           <h3 class="team-name">
             {{member.name}}

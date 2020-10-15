@@ -3,10 +3,7 @@
     {% for service in section.services %}
     <div class="col-5_md-12 item-card" data-aos="zoom-in">
       <div class="item-img">
-        {% assign path = service.feature_image | replace: "/assets", "assets" %}
-        {% assign alt = service.alt_text %}
-        {% include image-lazy.html %}
-        <!-- <img src="{{service.feature_image}}" alt="{{service.alt_text}}"> -->
+        <img src="{{service.feature_image | replace: "/assets/images", "/assets/images/srcset/600"}}" srcset="{{service.feature_image | replace: "/assets/images", "/assets/images/srcset/600" | replace: "jpg","webp"}}" alt="{{service.name}}" class="responsive-img lazyload">
       </div>
       <div class="item-content">
         <div class="item-heading">

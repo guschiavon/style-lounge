@@ -11,9 +11,11 @@
       <a href="{{highlight.url}}">
         <div class="padding-sm">
           <div class="highlight-container">
-            {% assign path = highlight.highlight_image | replace: "/assets", "assets" %}
-            {% assign alt = highlight.highlight_image_alt_text %}
-            {% include image.html path = highlight.highlight_image alt = image.highlight_image_alt_text %}
+          
+            <div class="responsive-img-container">
+
+              <img src="{{highlight.highlight_image | replace: "/assets/images", "/assets/images/srcset/360"}}" srcset="{{highlight.highlight_image | replace: "/assets/images", "/assets/images/srcset/360" | replace: "jpg", "webp"}}" alt="{{highlight.highlight_image_alt_text}}" class="responsive-img lazyload">
+            </div>
             <div class="highlight-inner">
               <h3>
                 {{highlight.heading}}

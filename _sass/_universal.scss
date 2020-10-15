@@ -50,6 +50,10 @@ textarea {
   margin: 0.5rem auto;
 }
 
+ul li {
+  list-style: none;
+}
+
 // overrides the Cookiescript styles
 #cookiescript_injected span {
     font-size: 0.9rem;
