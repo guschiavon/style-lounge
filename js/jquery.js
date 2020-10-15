@@ -31,8 +31,3 @@ $(document).ready(function(){
   adjustHeight(textHeight, imageHeight)
 });
 
-// Container size calculation
-const imageContainer = document.getElementsByClassName('responsive-img-container')
-const calcContainerSize = function(imageContainer) {
-  imageContainer.each(height())
-}

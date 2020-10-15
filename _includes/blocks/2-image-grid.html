@@ -20,6 +20,7 @@
       <div class="bg-accent">
         {% assign path = row.image | replace: "/assets", "assets" %}
         {% assign alt = row.alt_text %}
+        
         {% include image-lazy.html %}
       </div>
     </div>

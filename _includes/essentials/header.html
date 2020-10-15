@@ -5,7 +5,6 @@
     {% if page.main_image %}
       {% assign path = page.main_image | replace: "/assets", "assets" %}
       {% assign alt = page.main_image_alt_text %}
-
       {% responsive_image_block %}
         path: {{ path }}
         alt: {{ alt }}
