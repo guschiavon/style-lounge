@@ -2,8 +2,11 @@
   <div class="grid-noGutter-spaceAround">
     {% for professional in section.professionals %}
     <div class="col-5_md-12 item-card" data-aos="fade-up" data-aos-duration="1000">
-      <div class="item-img">        
-        <img src="{{professional.profile_image | replace: "/assets/images", "/assets/images/srcset/600"}}" srcset="{{professional.profile_image | replace: "/assets/images", "/assets/images/srcset/600" | replace: "jpg","webp"}}" alt="{{professional.name}}" class="responsive-img lazyload">
+      <div class="item-img">     
+        {% assign path = professional.profile_image | replace: "/assets/images", "assets/images" %}
+        {% assign alt = professional.name %}
+        {% include image-lazy.html %}   
+        
       </div>
       <div class="item-content">
         <div class="item-heading">

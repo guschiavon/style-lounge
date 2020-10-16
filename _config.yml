@@ -211,6 +211,7 @@ responsive_image:
     - width: 1400
   base_path: assets/images
   output_path_format: assets/images/srcset/%{width}/%{basename}
+  # extra_images: assets/images/srcset/
 
 # Configuration of the jekyll-archives plugin
 # jekyll-archives:

@@ -18,10 +18,9 @@
     </div>
     <div class="col-6_sm-12-middle img-container">
       <div class="bg-accent">
-        {% assign path = row.image | replace: "/assets", "assets" %}
-        {% assign alt = row.alt_text %}
-        
-        {% include image-lazy.html %}
+        {% assign path = row.image | replace: "/assets/images", "assets/images/srcset/800" %}
+        {% assign alt = row.alt_text %}        
+        {% include image-600.html %}
       </div>
     </div>
   </div>

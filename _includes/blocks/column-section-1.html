@@ -2,10 +2,9 @@
   <div class="grid-noGutter-spaceAround">
     <div class="col-6_sm-12-middle">
       <div class="img-lg bg-pattern">
-        {% assign path = section.image | replace: "/assets", "assets" %}
-        {% assign alt = section.alt_text %}
-        
-        {% include image-lazy.html %}
+        {% assign path = section.image | replace: "/assets/images", "assets/images/srcset/600" %}
+        {% assign alt = section.alt_text %}     
+        {% include image-600.html %}
       </div>
     </div>
     <div class="col-6_sm-12-middle">

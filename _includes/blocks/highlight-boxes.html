@@ -10,11 +10,12 @@
     <div class="col-4_md-6_sm-12" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
       <a href="{{highlight.url}}">
         <div class="padding-sm">
-          <div class="highlight-container">
-          
+          <div class="highlight-container">          
             <div class="responsive-img-container">
 
-              <img src="{{highlight.highlight_image | replace: "/assets/images", "/assets/images/srcset/360"}}" srcset="{{highlight.highlight_image | replace: "/assets/images", "/assets/images/srcset/360" | replace: "jpg", "webp"}}" alt="{{highlight.highlight_image_alt_text}}" class="responsive-img lazyload">
+              {% assign path = highlight.highlight_image | replace: "/assets/images", "assets/images/srcset/360" %}
+              {% assign alt = highlight.heading %}
+              {% include image-360.html %}   
             </div>
             <div class="highlight-inner">
               <h3>
