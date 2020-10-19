@@ -15,8 +15,8 @@
           <a href="{{menu.url}}" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a>
         {% endfor %}
         <span class="menu-social">
-          <a href="{{site.data.settings.social.facebook_url}}">{% include social-icons.html icon='Facebook' %}</a>
-          <a href="{{site.data.settings.social.instagram_url}}">{% include social-icons.html icon='Instagram' %}</a>
+          <a href="{{site.data.settings.social.facebook_url}}" target="_blank">{% include social-icons.html icon='Facebook' %}</a>
+          <a href="{{site.data.settings.social.instagram_url}}" target="_blank">{% include social-icons.html icon='Instagram' %}</a>
         </span>
       </nav>
     </div>
@@ -40,9 +40,8 @@
         </ul>
       </nav>
       <div class="menu-social">
-        <a href="{{site.data.settings.social.facebook_url}}">{% include social-icons.html icon='Facebook' %}</a>
-        <a href="{{site.data.settings.social.instagram_url}}">{% include social-icons.html icon='Instagram' %}</a>
-        <a href="{{site.data.settings.social.twitter_url}}">{% include social-icons.html icon='Twitter' %}</a>
+        <a href="{{site.data.settings.social.facebook_url}}"  target="_blank">{% include social-icons.html icon='Facebook' %}</a>
+        <a href="{{site.data.settings.social.instagram_url}}" target="_blank">{% include social-icons.html icon='Instagram' %}</a>
       </div>
     </div>
   </div>
