@@ -34,6 +34,21 @@
 .cta-1 {
   background-position: center;
   background-size: cover;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.65;
+    z-index: 0;
+  }
+  .cta-content {
+    z-index: 1;
+  }
 }
 
 .ads-slider {

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://thestyleloungelichfield.com/404</loc>
+<loc>http://localhost:4000/404</loc>
 </url>
 <url>
-<loc>https://thestyleloungelichfield.com/contact</loc>
+<loc>http://localhost:4000/contact</loc>
 </url>
 <url>
-<loc>https://thestyleloungelichfield.com/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>https://thestyleloungelichfield.com/privacy</loc>
+<loc>http://localhost:4000/privacy</loc>
 </url>
 <url>
-<loc>https://thestyleloungelichfield.com/services</loc>
+<loc>http://localhost:4000/services</loc>
 </url>
 <url>
-<loc>https://thestyleloungelichfield.com/team</loc>
+<loc>http://localhost:4000/team</loc>
 </url>
 </urlset>
