@@ -12,7 +12,7 @@
       </div>
       <nav class="col-8_md-9-middle flex-center right">
         {% for menu in site.data.settings.navigation %}
-          <a href="https://www.premiersoftware.co.uk/Book-OnlineV2/?i=1390ac4e2ce6e6d2f47d573ab30aa42a" class="editable {% if menu.button %}btn-outline{% endif %}">Make Appointment</a>
+          <a href="https://www.premiersoftware.co.uk/Book-OnlineV2/?i=1390ac4e2ce6e6d2f47d573ab30aa42a" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a>
         {% endfor %}
         <span class="menu-social">
           <a href="{{site.data.settings.social.facebook_url}}" target="_blank">{% include social-icons.html icon='Facebook' %}</a>
@@ -35,7 +35,7 @@
       <nav class="mobile-links">
         <ul>
           {% for menu in site.data.settings.navigation %}
-          <li><a href="https://www.premiersoftware.co.uk/Book-OnlineV2/?i=1390ac4e2ce6e6d2f47d573ab30aa42a" class="editable {% if menu.button %}btn-outline{% endif %}">Make Appointment</a></li>
+          <li><a href="https://www.premiersoftware.co.uk/Book-OnlineV2/?i=1390ac4e2ce6e6d2f47d573ab30aa42a" class="editable {% if menu.button %}btn-outline{% endif %}">{{menu.name}}</a></li>
           {% endfor %}          
         </ul>
       </nav>
