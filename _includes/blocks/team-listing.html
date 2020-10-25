@@ -15,12 +15,13 @@
       {% for member in section.team_members %}
       <div class="col-4_md-6_sm-12">
         <div class="team-card padding-md">
+          {% unless member.avatar_image == nil %}
           <div class="team-avatar">
             {% assign path = member.avatar_image | replace: "/assets/images", "assets/images/srcset/360" %}
             {% assign alt = member.name %}
             {% include image-360.html %}   
-            <!-- <img src="{{member.avatar_image | replace: "/assets/images", "/assets/images/srcset/360"}}" srcset="{{member.avatar_image | replace: "/assets/images", "/assets/images/srcset/360" | replace: "jpg", "webp"}}" alt="{{member.name}} the style lounge hair salon" class="img-sm" /> -->
           </div>
+          {% endunless %}
           <h3 class="team-name">
             {{member.name}}
           </h3>
