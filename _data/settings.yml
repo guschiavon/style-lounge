@@ -1,9 +1,9 @@
 basics:
   site_title: The Style Lounge
-  description: Hair salon and beauty treatments in Lichfield
+  description: Hair salon in Lichfield
   site_base_url: 'https://thestyleloungelichfield.com'
   site_logo_image: assets/images/the-style-lounge-logo.png
-  site_thumb_image: assets/images/hair-salon-lichfield-the-style-lounge-oribe-1.jpg
+  site_thumb_image: /assets/images/hair-salon-lichfield-the-style-lounge-4.jpg
   contact_email: sales@thestyleloungelichfield.com
   phone_number: +44 1543 897790
   address: '5-7 Greenhill, Lichfield'
