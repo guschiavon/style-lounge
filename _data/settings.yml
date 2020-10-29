@@ -64,7 +64,7 @@ configuration:
     Date().getTime(),event:'gtm.js'});var
     f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5TZCS67');</script>
   google_analytics_code_block:
-  form_submission_handler_code_block:
+  form_submission_handler_code_block: "https://thestyleloungelichfield.us2.list-manage.com/subscribe/post"
   flexbox_framework_code_block: >-
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
