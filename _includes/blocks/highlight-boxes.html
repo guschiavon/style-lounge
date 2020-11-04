@@ -11,12 +11,12 @@
       <a href="{{highlight.url}}">
         <div class="padding-sm">
           <div class="highlight-container">          
-            <div class="responsive-img-container">
+            
 
               {% assign path = highlight.highlight_image | replace: "/assets/images", "assets/images/srcset/360" %}
               {% assign alt = highlight.heading %}
               {% include image-360.html %}   
-            </div>
+            
             <div class="highlight-inner">
               <h3>
                 {{highlight.heading}}
