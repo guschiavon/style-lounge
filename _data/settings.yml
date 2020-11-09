@@ -57,7 +57,7 @@ seo:
     - hair salon
     - lichfield
     - optimization
-  description: Looking for a hair salon in Lichfield
+  description: The Style Lounge is the reference hair salon in Lichfield. Our professionals are specialists in hair colour, hair styling, hair extensions, balayage and more. Visit our hair salon in Lichfield for a personalised and professional experience.
 configuration:
   google_tag_manager_code_block: >-
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new
