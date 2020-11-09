@@ -73,6 +73,7 @@ _array_structures:
             alt_text:
             add_button:
             button_text:
+            button_url:
     - label: 'Column Section #1'
       description: 2 column section with image, heading and paragraph
       icon: vertical_split
