@@ -21,5 +21,6 @@
 
 <meta name="keywords" content="{% if page.keywords %} {{page.keywords}} {% else %} {% for keyword in site.data.settings.seo.keywords %} {{ keyword }} {% endfor %} {% endif %}">
 <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }} {% else %} {{ site.data.settings.seo.description | truncate: 160  }} {% endif %}" />
-
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="canonical" href="{{site.data.settings.basics.site_base_url}}">
