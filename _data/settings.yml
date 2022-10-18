@@ -1,23 +1,23 @@
 basics:
   site_title: The Style Lounge
   description: Hair salon in Lichfield
-  site_base_url: 'https://thestyleloungelichfield.com'
+  site_base_url: https://thestyleloungelichfield.com
   site_logo_image: assets/images/the-style-lounge-logo.png
   site_thumb_image: /assets/images/hair-salon-lichfield-the-style-lounge-4.jpg
   contact_email: sales@thestyleloungelichfield.com
   phone_number: +44 1543 897790
-  address: '5-7 Greenhill, Lichfield'
+  address: 5-7 Greenhill, Lichfield
 opening_hours:
-  monday: 9am-6pm
+  monday: 9am-5pm
   tuesday: 9am-8pm
   wednesday: 9am-6pm
   thursday: 9am-6pm
   friday: 9am-7pm
-  saturday: 9am-4.30pm
+  saturday: '9am-4.30pm '
   sunday: closed
 social:
-  facebook_url: 'https://facebook.com/thestyleloungelich'
-  instagram_url: 'https://instagram.com/thestyleloungelichfield'
+  facebook_url: https://facebook.com/thestyleloungelich
+  instagram_url: https://instagram.com/thestyleloungelichfield
   instagram_handle: '@thestyleloungelichfield'
 navigation:
   - name: services
@@ -27,7 +27,7 @@ navigation:
     url: /team
     button: false
   - name: Shop
-    url: 'https://shop.thestyleloungelichfield.com'
+    url: https://shop.thestyleloungelichfield.com
     button: false
   - name: Contact
     url: /contact
@@ -57,14 +57,18 @@ seo:
     - hair salon
     - lichfield
     - optimization
-  description: The Style Lounge is a boutique colour specialist hair salon in the heart of Lichfield. A retreat with a truly welcoming atmosphere, elegance and a modern relaxed style, complete with longer appointment times and complimentary consultations for every appointment. 
+  description: >-
+    The Style Lounge is a boutique colour specialist hair salon in the heart of
+    Lichfield. A retreat with a truly welcoming atmosphere, elegance and a
+    modern relaxed style, complete with longer appointment times and
+    complimentary consultations for every appointment.
 configuration:
   google_tag_manager_code_block: >-
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new
     Date().getTime(),event:'gtm.js'});var
     f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5TZCS67');</script>
   google_analytics_code_block:
-  form_submission_handler_code_block: "https://thestyleloungelichfield.us2.list-manage.com/subscribe/post"
+  form_submission_handler_code_block: https://thestyleloungelichfield.us2.list-manage.com/subscribe/post
   flexbox_framework_code_block: >-
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
