@@ -197,7 +197,7 @@ _array_structures:
 # Plugins installed
 plugins:
   - jekyll-sitemap
-  - jekyll-responsive-image
+  # - jekyll_picture_tag
   # - jekyll-archives
   - jekyll-webp
 
@@ -228,6 +228,12 @@ responsive_image:
 #     day: '/:year/:month/:day/'
 #     tag: '/tags/:name/'
 #     category: '/categories/:name/'
+
+# configuration of jekyll_picture_tag plugin
+picture:
+  source: "/"
+  output: "generated/"
+  suppress_warnings: true
 
 # Configuration for the WebP Generator Plugin
 webp:
