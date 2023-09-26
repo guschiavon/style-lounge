@@ -2,12 +2,14 @@
 <footer id="footer" class="footer padding-x-lg padding-y-sm mobile-center">
   <div class="grid-noGutter-spaceAround">
     <div class="col-4_md-12-middle my-2">
-      <img src="{{site.data.settings.basics.site_logo_image}}" alt="The Style Lounge Lichfield Hair Salon Bridal Services" class="footer-logo">
-      <p><address>{{site.data.settings.basics.address}}</address></p>
-      <p><a href="tel:{{site.data.settings.basics.phone_number | remove: " "}}">{{site.data.settings.basics.phone_number}}</a></p>
-      <p><a href="mailto:{{site.data.settings.basics.contact_email}}">{{site.data.settings.basics.contact_email}}</a></p>
-      <a href="{{site.data.settings.social.facebook_url}}" class="footer-social" target="_blank">{%include social-icons.html icon="Facebook" %}</a>
-      <a href="{{site.data.settings.social.instagram_url}}" class="footer-social" target="_blank">{%include social-icons.html icon="Instagram" %}</a>
+      {% picture small_logo "{{site.data.settings.basics.site_logo_image}}" --img class="footer-logo" alt="The Style Lounge Lichfield Hair Salon Bridal Services"%}      
+      <a href="https://maps.app.goo.gl/HTGieg8ZEWBBSVxn8" target="_blank" rel="noopener noreferrer" class="padding-sm"><address>{{site.data.settings.basics.address}}</address></a>
+      <div class="">
+        <a href="tel:{{site.data.settings.basics.phone_number | remove: " "}}" class="inline-block padding-sm">{{site.data.settings.basics.phone_number}}</a>
+        <a href="mailto:{{site.data.settings.basics.contact_email}}" class="inline-block padding-sm">{{site.data.settings.basics.contact_email}}</a>
+      </div>
+      <a href="{{site.data.settings.social.facebook_url}}" class="footer-social" target="_blank" aria-label="Facebook profile">{%include social-icons.html icon="Facebook" %}</a>
+      <a href="{{site.data.settings.social.instagram_url}}" class="footer-social" target="_blank"  aria-label="Instagram profile">{%include social-icons.html icon="Instagram" %}</a>
     </div>
     <div class="col-4_md-12-middle mobile-hide">
       <nav class="footer-nav">
@@ -32,7 +34,7 @@
     </div>
   </div>
   <div class="col-12 legal-links center">
-    <a href="/privacy">Your Privacy & Cookies</a>
-    <a href="https://linkedin/in/gus-schiavon"><strong>Created with passion by Tuo.Dev</strong></a>
+    <a href="/privacy" class="padding-sm">Your Privacy & Cookies</a>
+    <a href="https://linkedin/in/gus-schiavon" class="padding-sm"><strong>Created with passion by Gus.Dev</strong></a>
   </div>
 </footer>
