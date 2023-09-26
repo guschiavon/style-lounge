@@ -1,7 +1,7 @@
 presets:
   atf-large:
     markup: direct_url
-    formats: [avif, webp]
+    formats: [webp, avif]
     fallback_width: 1600        
     fallback_format: webp
   atf-mobile:

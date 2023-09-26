@@ -2,6 +2,9 @@
   height    : 800px;
   width     : 100vw;
   position  : relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
   .responsive-img {
     object-fit      : cover;

@@ -198,37 +198,7 @@ _array_structures:
 plugins:
   - jekyll-sitemap
   - jekyll_picture_tag
-  # - jekyll-archives
-  # - jekyll-webp
-
-# Configuration of the jekyll-responsive-image plugin
-# responsive_image:
-#   template: _includes/templates/image-tag-lazy.html
-#   sizes:
-#     - width: 360
-#     - width: 480
-#     - width: 600
-#     - width: 800
-#     - width: 1400
-#   base_path: assets/images
-#   output_path_format: assets/images/srcset/%{width}/%{basename}
-#   # extra_images: assets/images/srcset/
-
-# Configuration of the jekyll-archives plugin
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive
-#     tag: archive
-#   permalinks:
-#     year: '/:year/'
-#     month: '/:year/:month/'
-#     day: '/:year/:month/:day/'
-#     tag: '/tags/:name/'
-#     category: '/categories/:name/'
-
+  
 # configuration of jekyll_picture_tag plugin
 picture:
   source: "/"

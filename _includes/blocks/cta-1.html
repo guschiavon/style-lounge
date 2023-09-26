@@ -1,4 +1,4 @@
-<section id="cta-1" class="cta-1 padding-lg flex-center center" style="background-image: url({{section.background_image}});">
+<section id="cta-1" class="cta-1 padding-lg flex-center center" style='background-image: url({% picture direct "{{ section.background_image | default: "/assets/images/marble-bg-2.jpg" }}" %});'>
   <div class="cta-content">
     <h2 class="editable">
  	Book a Service
