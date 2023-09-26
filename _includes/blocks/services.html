@@ -4,9 +4,7 @@
     <div class="col-5_md-12 item-card" data-aos="zoom-in">
       {% unless service.feature_image == nil %}
       <div class="item-img">
-        {% assign path = service.feature_image | replace: "/assets/images", "assets/images/srcset/600" %}
-        {% assign alt = service.name %}
-        {% include image-600.html %}   
+        {% picture xxlarge "{{service.feature_image}}" --img alt="{{service.name}}"%}        
       </div>
       {% endunless %}
       <div class="item-content center">

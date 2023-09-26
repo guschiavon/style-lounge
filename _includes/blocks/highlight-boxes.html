@@ -10,13 +10,8 @@
     <div class="col-4_md-6_sm-12" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
       <a href="{{highlight.url}}">
         <div class="padding-sm">
-          <div class="highlight-container">          
-            
-
-              {% assign path = highlight.highlight_image | replace: "/assets/images", "assets/images/srcset/360" %}
-              {% assign alt = highlight.heading %}
-              {% include image-360.html %}   
-            
+          <div class="highlight-container">                      
+            {% picture xxlarge "{{highlight.highlight_image}}" --img alt="{{highlight.heading}}" loading="lazy" %}                                      
             <div class="highlight-inner">
               <h3>
                 {{highlight.heading}}

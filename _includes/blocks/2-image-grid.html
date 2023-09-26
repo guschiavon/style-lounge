@@ -18,9 +18,7 @@
     </div>
     <div class="col-6_sm-12-middle img-container">
       <div class="bg-accent">
-        {% assign path = row.image | replace: "/assets/images", "assets/images" %}
-        {% assign alt = row.alt_text %}        
-        {% include image-600.html %}
+        {% picture xxlarge "{{row.image}}" --img alt="{{row.alt_text}}"%}        
       </div>
     </div>
   </div>

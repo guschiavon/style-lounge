@@ -5,9 +5,6 @@ source 'https://rubygems.org'
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'
-  gem 'ffi'
-  # gem 'jekyll-archives', '2.2.1'
-  gem 'jekyll-webp', '1.0.0'
-  gem 'jekyll-responsive-image'
-  # gem 'jekyll_picture_tag'
+  gem 'ffi'  
+  gem 'jekyll_picture_tag'
 end

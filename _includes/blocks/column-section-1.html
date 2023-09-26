@@ -3,9 +3,7 @@
     <div class="col-6_sm-12-middle">
       {% unless section.image == nil %}
       <div class="img-lg bg-pattern">
-        {% assign path = section.image | replace: "/assets/images", "assets/images" %}
-        {% assign alt = section.alt_text %}     
-        {% include image-600.html %}
+        {% picture large "{{section.image}}" --img alt="{{section.alt_text}}"%}        
       </div>
       {% endunless %}
     </div>

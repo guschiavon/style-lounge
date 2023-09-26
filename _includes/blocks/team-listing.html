@@ -17,9 +17,7 @@
         <div class="team-card padding-md">
           {% unless member.avatar_image == nil %}
           <div class="team-avatar">
-            {% assign path = member.avatar_image | replace: "/assets/images", "assets/images/srcset/360" %}
-            {% assign alt = member.name %}
-            {% include image-360.html %}   
+            {% picture xxlarge "{{memeber.avatar_image}}" --img alt="{{member.name}}"%}            
           </div>
           {% endunless %}
           <h3 class="team-name">

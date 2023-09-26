@@ -4,10 +4,7 @@
     <div class="col-5_md-12 item-card" data-aos="fade-up" data-aos-duration="1000">
       {% unless professional.profile_image == nil %}
       <div class="item-img">     
-        {% assign path = professional.profile_image | replace: "/assets/images", "assets/images" %}
-        {% assign alt = professional.name %}
-        {% include image-lazy.html %}   
-        
+        {% picture xxlarge "{{professional.profile_image}}" --img alt="{{professional.name}}"%}                
       </div>
       {% endunless %}
       <div class="item-content">

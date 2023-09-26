@@ -1,17 +1,10 @@
 <!-- Create your above-the-fold here -->
 <header>
   {% include essentials/nav.html %}
-  <div class="header-banner">
+  <div class="header-banner" style="background-image: url({{page.main_image}});">
     {% if page.main_image %}
-      {% assign path = page.main_image | replace: "/assets", "assets" %}
-      {% assign alt = page.main_image_alt_text %}
-      {% responsive_image_block %}
-        path: {{ path }}
-        alt: {{ alt }}
-        {% if title %}
-        title: {{ title }}
-        {% endif %}
-      {% endresponsive_image_block %}
+      
+      
     {% endif %}
     {% if page._home %}
     <div class="header-content flex-center">
