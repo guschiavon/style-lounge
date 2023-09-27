@@ -3,8 +3,10 @@
   <div class="grid-noGutter-spaceAround">
     <div class="col-4_md-12-middle my-2">
       {% picture small_logo "{{site.data.settings.basics.site_logo_image}}" --img class="footer-logo" alt="The Style Lounge Lichfield Hair Salon Bridal Services" loading="lazy" %}      
-      <a href="https://maps.app.goo.gl/HTGieg8ZEWBBSVxn8" target="_blank" rel="noopener noreferrer" class="padding-sm"><address>{{site.data.settings.basics.address}}</address></a>
       <div class="">
+        <a href="https://maps.app.goo.gl/HTGieg8ZEWBBSVxn8" target="_blank" rel="noopener noreferrer" class="padding-sm inline-block"><address>{{site.data.settings.basics.address}}</address></a>
+      </div>
+      <div class="my-2">
         <a href="tel:{{site.data.settings.basics.phone_number | remove: " "}}" class="inline-block padding-sm">{{site.data.settings.basics.phone_number}}</a>
         <a href="mailto:{{site.data.settings.basics.contact_email}}" class="inline-block padding-sm">{{site.data.settings.basics.contact_email}}</a>
       </div>
@@ -33,8 +35,10 @@
       <p>Sunday: {{site.data.settings.opening_hours.sunday}}</p>
     </div>
   </div>
-  <div class="col-12 legal-links center">
-    <a href="/privacy" class="padding-sm">Your Privacy & Cookies</a>
-    <a href="https://linkedin/in/gus-schiavon" class="padding-sm"><strong>Created with passion by Gus.Dev</strong></a>
+  <div class="col-12 ">
+    <div class="legal-links center">
+      <a href="/privacy" class="inline-block my-2">Your Privacy & Cookies</a>
+      <a href="https://linkedin/in/gus-schiavon" class="inline-block my-2"><strong>Created with passion by Gus.Dev</strong></a>
+    </div>
   </div>
 </footer>

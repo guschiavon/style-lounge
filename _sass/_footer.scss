@@ -25,9 +25,12 @@
   }
 }
 .legal-links {
+  
   color: goldenrod;
   a {
+    display: inline-block;
     font-size: 0.8rem;
-    display: block;
+    padding: 8px;
+    margin: 0 5px;
   }
 }
