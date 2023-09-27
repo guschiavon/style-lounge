@@ -70,5 +70,4 @@ configuration:
   google_analytics_code_block:
   form_submission_handler_code_block: https://thestyleloungelichfield.us2.list-manage.com/subscribe/post
   flexbox_framework_code_block: >-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" rel="stylesheet preload" onload="this.rel = 'stylesheet'" as="style" crossorigin="anonymous" type="text/css">
