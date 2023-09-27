@@ -128,3 +128,20 @@ sections:
     button_text: Shop Now
     button_url: https://shop.thestyleloungelichfield.com/
 ---
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Adjust height based on 'object-fit' with Gridlex 'equalHeight' class
+    let textHeight = document.querySelector('.text-container').offsetHeight;
+    let imageHeight = document.querySelector('.img-container').offsetHeight;
+
+    const adjustHeight = function (text, image) {
+      document.querySelectorAll('.row').forEach(function (row) {
+        if (text > image) {
+          document.querySelector('.img-container').style.height = textHeight + 'px';
+        }
+      });
+    }
+
+    adjustHeight(textHeight, imageHeight);
+  })
+</script>

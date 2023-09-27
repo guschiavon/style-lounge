@@ -13,20 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.burger').classList.toggle('open');
     });
   });
-
-  // Adjust height based on 'object-fit' with Gridlex 'equalHeight' class
-  let textHeight = document.querySelector('.text-container').offsetHeight;
-  let imageHeight = document.querySelector('.img-container').offsetHeight;
-
-  const adjustHeight = function(text, image) {
-    document.querySelectorAll('.row').forEach(function(row) {
-      if (text > image) {
-        document.querySelector('.img-container').style.height = textHeight + 'px';
-      }
-    });
-  }
-
-  adjustHeight(textHeight, imageHeight);
+  
 
 });
 
