@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="http://localhost:4000feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://0.0.0.0:4000feed.xml" rel="self" type="application/rss+xml" />
     <title>The Style Lounge</title>
     <description>Hair salon in Lichfield</description>
-    <link>http://localhost:4000</link>
+    <link>http://0.0.0.0:4000</link>
     
   </channel>
 </rss>

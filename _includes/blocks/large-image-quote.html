@@ -1,7 +1,7 @@
 <section id="illustrated-quote" class="illustrated-quote">
   <div class="">
     <div class="large-image">
-      {% picture large "{{page.highlight_image}}" --img alt="{{highlight_image_alt_text}}"%}
+      {% picture large "{{page.highlight_image | default: '/assets/images/placeholder.png'}}" --img alt="{{highlight_image_alt_text}}"%}
       
     </div>
   </div>

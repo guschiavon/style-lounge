@@ -11,7 +11,7 @@
       <a href="{{highlight.url}}">
         <div class="padding-sm">
           <div class="highlight-container">                      
-            {% picture xxlarge "{{highlight.highlight_image}}" --img alt="Image of a model illustrating our {{highlight.heading}} services page" loading="lazy" %}                                      
+            {% picture xxlarge "{{highlight.highlight_image | default: '/assets/images/placeholder.png'}}" --img alt="Image of a model illustrating our {{highlight.heading}} services page" loading="lazy" %}                                      
             <div class="highlight-inner">
               <h3>
                 {{highlight.heading}}

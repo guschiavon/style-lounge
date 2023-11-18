@@ -4,7 +4,7 @@
     <div class="col-5_md-12 item-card" data-aos="zoom-in">
       {% unless service.feature_image == nil %}
       <div class="item-img">
-        {% picture xxlarge "{{service.feature_image}}" --img alt="{{service.name}}" class="responsive-img"%}        
+        {% picture xxlarge "{{service.feature_image | default: '/assets/images/placeholder.png'}}" --img alt="{{service.name}}" class="responsive-img"%}        
       </div>
       {% endunless %}
       <div class="item-content center">
