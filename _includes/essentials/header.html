@@ -4,15 +4,12 @@
   <div class="header-banner" style='background-image: url({% picture direct "{{ page.main_image | default: "/assets/images/website.jpg" }}" %});'>
     {% if page._home %}
     <div class="header-content flex-center">
-      <h2 class="banner-heading" data-aos="zoom-in" data-aos-duration="1000">
+      <h1 class="banner-heading" data-aos="zoom-in" data-aos-duration="1000">
         The Style Lounge
-      </h2>
-      <h3 class="editable" data-aos="zoom-in" data-aos-duration="1000">
- 	Lichfield
- </h3>
-      <!-- <span>
-        <a href="book" class="btn-solid">Make appointment</a>
-      </span> -->
+      </h1>
+      <span class="banner-location editable" data-aos="zoom-in" data-aos-duration="1000">
+        Lichfield
+      </span>      
     </div>
     {% endif %}
     {% unless page._home %}

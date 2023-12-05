@@ -2,7 +2,8 @@
 // Typography
 h1,
 h2,
-h3 {
+h3,
+.banner-location {
   font-family     : $heading-font-family;
   margin-bottom   : $heading-default-bottom-margin;
   // letter-spacing  : 2px;
@@ -19,7 +20,8 @@ h2 {
   font-size     : 3.5rem;
 }
 
-h3 {
+h3,
+.banner-location {
   font-size     : 2rem;
   font-weight   : 300;
 }
